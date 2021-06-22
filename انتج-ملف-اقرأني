@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+import requests
+import os
+from tqdm import tqdm
+from bs4 import BeautifulSoup
+
+
+# autopepignore
+readme_template = \
+"""<div dir=rtl>
+
+# تجميعة
+
+![غلاف](./غلاف.png)
+
+{وصف}
+"""
+
+
+def generate_readme():
+    return readme_template.format(description)
+
+
+cache_dir=".cache"
+if os.path.isfile(cache_dir):
+    raise "file exists in the same place of cache dir: " + cache_dir
+if not os.path.isdir(cache_dir):
+    os.mkdir(cache_dir)
+
+
+if __name__ == "__main__":    
+    with open("README.md", "w") as f:
+        f.write(generate_readme())
