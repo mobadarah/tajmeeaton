@@ -1,34 +1,97 @@
 #!/usr/bin/env python
 
-import requests
 import os
+import sys
+import json
+import time
+import md_toc
+import requests
 from tqdm import tqdm
-from bs4 import BeautifulSoup
+from dotenv import dotenv_values
+from datetime import datetime as dt, timedelta
 
-
-# autopepignore
+env = dotenv_values(".بيئة")
+NOTION_API_URL = "https://api.notion.com/v1"
+NOTION_API_VERSION = "2021-05-13"
+NOTION_PAGE_ID = "b077633a505a400484f69948dc039f43"
+README_FILE = "README.md"
+CACHE_DIR = ".cache"
 readme_template = \
-"""<div dir=rtl>
+    """<div dir=rtl>
 
 # تجميعة
 
 ![غلاف](./غلاف.png)
 
 {وصف}
+
+<!--TOC-->
+---
+
+{المحتوى}
 """
 
 
 def generate_readme():
-    return readme_template.format(description)
+    description = "## وصف"
+    page_data = get_page_data()['results']
+    content = "## محتوى\n\n"
+    content += "```json\n" + json.dumps(list(map(lambda x: x['type'], page_data)), indent=2) + "\n```"
+    return readme_template.format(وصف=description,
+                                  المحتوى=content)
 
 
-cache_dir=".cache"
-if os.path.isfile(cache_dir):
-    raise "file exists in the same place of cache dir: " + cache_dir
-if not os.path.isdir(cache_dir):
-    os.mkdir(cache_dir)
+def get_page_data():
+    cache_file = f"{CACHE_DIR}/page_data.json"
+    timestamp_file = f"{cache_file}.timestamp"
+    is_force = len(sys.argv) > 1 and sys.argv[1] == "--أجبر"
+    if not is_force and os.path.exists(cache_file):
+        if os.path.exists(timestamp_file):
+            timestap = open(timestamp_file, "r")
+            if dt.now() - dt.strptime(timestap.read(), "%c") < timedelta(minutes=5):
+                print("📑 احضار البيانات من ملف المخزن المؤقت")
+                timestap.close()
+                f = open(f"{cache_file}", "r")
+                page_data = json.loads(f.read())
+                f.close()
+                return page_data
+            timestap.close()
 
 
-if __name__ == "__main__":    
-    with open("README.md", "w") as f:
-        f.write(generate_readme())
+    start_time = time.time()
+    print("📑 إحضار البيانات من الخادوم الخاص بنوشن")
+    req_data = requests.get(f"{NOTION_API_URL}/blocks/{NOTION_PAGE_ID}/children", headers={
+                            "Authorization": f"Bearer {env['NOTION_TOKEN']}",
+                            "Notion-Version": NOTION_API_VERSION})
+    req_data = req_data.json()
+    end_time = time.time()
+    print("✅️ تم إحضار البيانات خلال: ", "{:2.2}".format(end_time - start_time), "ث")
+
+    with open(cache_file, "w") as f:
+        f.write(json.dumps(req_data))
+    with open(timestamp_file, "w") as f:
+        f.write(dt.now().strftime("%c"))
+
+    return req_data
+
+
+if os.path.isfile(CACHE_DIR):
+    raise "file exists in the same place of cache dir: " + CACHE_DIR
+if not os.path.isdir(CACHE_DIR):
+    os.mkdir(CACHE_DIR)
+
+
+if __name__ == "__main__":
+    file_content = generate_readme()
+
+    with open(README_FILE, "w") as f:
+        f.write(file_content)
+
+    toc = md_toc.build_toc(README_FILE)
+    print("👇جدول المحتويات")
+    print("---------------------")
+    print(toc)
+    file_content = file_content.replace("<!--TOC-->", toc)
+
+    with open(README_FILE, "w") as f:
+        f.write(file_content)
