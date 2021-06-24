@@ -15,16 +15,18 @@ from datetime import datetime as dt, timedelta
 env = dotenv_values(".بيئة")
 NOTION_API_URL = "https://api.notion.com/v1"
 NOTION_API_VERSION = "2021-05-13"
-NOTION_PAGE_ID = "b077633a505a400484f69948dc039f43"
+NOTION_PAGE_ID = "3b693f2fe5ef4a08824aa7fd5fcd62fb"
 README_FILE = "README.md"
 CACHE_DIR = ".cache"
+notion_client=None
+page_block=None
 
 readme_template = \
 """<div dir=rtl>
 
 ![غلاف](./غلاف.png)
 
-ملف بي.دي.إف منسق الشكل (ينصح به): [./تجميعة.pdf](./تجميعة.pdf)
+> ملف بي.دي.إف منسق الشكل (ينصح به): [./تجميعة.pdf](./تجميعة.pdf)
 {المحتوى}
 """
 
@@ -121,15 +123,18 @@ def get_page_data_notion_api():
 
 
 def get_page_data_notionpy():
-    client = NotionClient(token_v2=env['NOTION_COOKIE_TOKEN_V2'])
-    page = client.get_block(
-        "https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb")
-    return page
+    global notion_client, page_bock
+    notion_client = notion_client or NotionClient(token_v2=env['NOTION_COOKIE_TOKEN_V2'])
+    page_block = notion_client.get_block(NOTION_PAGE_ID)
+    return page_block
 
 
 def generate_pdf_file():
+    global notion_client
     file_name = "تجميعة.pdf"
+    notion_client = notion_client or NotionClient(token_v2=env['NOTION_COOKIE_TOKEN_V2'])
     # request.get(download_url).content
+    notion_client.download_block(block_id=NOTION_PAGE_ID, export_type="pdf")
     print("📂 تم توليد ملف ", file_name)
 
 
@@ -150,3 +155,4 @@ if __name__ == "__main__":
 
     if "--بدإ" in sys.argv or "--pdf" in sys.argv:
         generate_pdf_file()
+        
