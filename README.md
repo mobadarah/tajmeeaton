@@ -14,11 +14,17 @@ __كيفية المساهمة:__
 يمكنك المساهمة بتوضيح خطأ لغوي أو اقتراح تحسينات أو إضافة أعمال ومشاريع أخرى تخدم الأمة الإسلامية، يمكنك فتح issue أو المشاركة في [النقاشات](https://github.com/MuhammadSawalhy/tajmeeaton/discussions/2).
 
 __ملاحظات:__
+
 - ستجد أنه معظم الوصف هنا بالإنجليزية لأن الوصف مأخوذ كما هو من المشاريع عن طريق الكود في [.\انتج-ملف-اقرأني](https://github.com/MuhammadSawalhy/tajmeeaton/blob/main/انتج-ملف-اقرأني)، وهذا مما أأسف له، من واقعنا الذي أسعى لتغييره، والله من وراء القصد
+
 - التجميعة على موقع نوشن: [https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb](https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb)
+
 - هنا أيضا [مستودع KL14NT/AIUX](https://github.com/KL13NT/AIUX) يهدف لتحسين تواجد اللغة العربية وتحسين تجربة المستخدم مع اللغة
+
 - توجد أيضا قائمة مجمع بها مشاريع تخدم الغة العربية على هذا المستودع، [01walid/awesome-arabic](https://github.com/01walid/awesome-arabic)
+
 - لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
+
 - فليكن هدفك الوحيد رضا الله، ولذا أنصح برخصة "[وقف](https://ojuba.org/waqf-2.0:%D8%B1%D8%AE%D8%B5%D8%A9_%D9%88%D9%82%D9%81_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9)" بدلا من رخص مثل GPL وال MIT، وغيرهما. كما يمكن إنشاء رخصة بها شروط مختلفة منطلقة من نفس المبدأ لمشاريعك المستقبلية إن شاء الله
 
 ---
@@ -40,6 +46,7 @@ __ملاحظات:__
   - [قرآن](#قرآن)
   - [حديث](#حديث)
   - [منوعات](#منوعات)
+- [الرخصة](#الرخصة)
 
 
 ---
@@ -47,6 +54,10 @@ __ملاحظات:__
 # مشاريع مطلوب توجدها
 
 مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة، وإذا كنت تريد تنمية مهاراتك في مشاريع بسيطة والمشاريع المطلوبة تتطلب خبرة وجهدا، أو ليست في مجالك وأردت المساهمة، ساهم في تنمية المشاريع الموجودة بالفعل، ستجد الكثير قد مضى عليه فترة من الزمن، ويحتاج بعض التحديثات والتنمية.
+
+> ستم الملئ إن شاء الله
+
+> قم بفتح issue وقدم اقتراحا
 
 - https://github.com/ejtaal/mr
 
@@ -70,7 +81,7 @@ __ملاحظات:__
 
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
 
-- https://github.com/forabi/arabic-tech-terminology/blob/master/en-ar.md
+- https://github.com/forabi/arabic-tech-terminology
 
   <span dir=ltr>Contribute to forabi/arabic-tech-terminology development by creating an account on GitHub.</span>
 
@@ -396,4 +407,6 @@ __ملاحظات:__
 
   <span dir=ltr>A Flutter application for Muslims that help them challenge and motivate themselves and their friends to read Azkar in a fun way. On Play Store & On App Store There are a lot of ways you can contribute to this project.</span>
 
+# الرخصة
 
+هذا العمل، التجميعة، مرخص تحت رخصة وقف، [.\رخصة.md](https://github.com/MuhammadSawalhy/tajmeeaton/blob/main/%D8%B1%D8%AE%D8%B5%D8%A9.md).

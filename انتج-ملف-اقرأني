@@ -68,7 +68,9 @@ def get_markdown(block, indent="", indent_unit="  "):
             if last_child_type == "bookmark":
                 content += get_markdown(child, indent=indent+indent_unit)
             else:
-                content += "\n- " + child.title
+                content += block_prefix + "- " + child.title
+        elif child_type == "quote":
+            content += block_prefix + "> " + child.title
         elif child_type == "bookmark":
             remove_pattern = re.compile(r"\s*Contribute to (\w+/\w+) development by creating an account on GitHub\.")
             desc = remove_pattern.sub("", child.description)
