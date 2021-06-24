@@ -78,7 +78,7 @@ __ملاحظات:__
 
 هذه القناة - ألف اختراع واختراع - تبين للعالم تاريخنا الذهبي وحضارة الإسلام العظيمة: [https://www.youtube.com/user/1001Inventions](https://www.youtube.com/user/1001Inventions).
 
-- https://github.com/Edraak/arabic-mathjax
+- https://github.com/OmarIthawi/arabic-mathjax
 
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
 
