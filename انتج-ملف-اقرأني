@@ -37,11 +37,13 @@ if not os.path.isdir(CACHE_DIR):
     os.mkdir(CACHE_DIR)
 
 
-def get_readme_content():
+def get_markdown(block, indent="", indent_unit="  "):
     content = ""
-    page_data = get_page_data(notionpy=True)
+    block_prefix = "\n\n" + indent
     numlist_counter = 0
-    for child in page_data.children:
+    last_child = None
+    last_child_type = None
+    for child in block.children:
         child_type = child.type # performance considerations
         if child_type == "numbered_list":
             numlist_counter += 1
@@ -49,29 +51,35 @@ def get_readme_content():
             continue
         numlist_counter = 0
         if child_type == "text":
-            content += "\n\n" + child.title
+            content += block_prefix + "" + child.title
         elif child_type == "table_of_contents":
-            content += "\n\n<!--TOC-->"
+            content += block_prefix + "<!--TOC-->"
         elif child_type == "divider":
-            content += "\n\n---"
+            content += block_prefix + "---"
         elif child_type == "header":
-            content += "\n\n# " + child.title
+            content += block_prefix + "# " + child.title
         elif child_type == "sub_header":
-            content += "\n\n## " + child.title
+            content += block_prefix + "## " + child.title
         elif child_type == "sub_sub_header":
-            content += "\n\n### " + child.title
+            content += block_prefix + "### " + child.title
         elif child_type == "column_list":
             content += ""
         elif child_type == "bulleted_list":
-            content += "\n- " + child.title
+            if last_child_type == "bookmark":
+                content += get_markdown(child, indent=indent+indent_unit)
+            else:
+                content += "\n- " + child.title
         elif child_type == "bookmark":
             remove_pattern = re.compile(r"\s*Contribute to (\w+/\w+) development by creating an account on GitHub\.")
             desc = remove_pattern.sub("", child.description)
             first_is_latin = re.compile(r"^\s*[a-zA-Z]").search(desc)
             direction = "ltr" if first_is_latin else "rtl"
-            content += f"\n\n- {child.link}\n\n  <span dir={direction}>{desc}</span>"
+            content += f"{block_prefix}- {child.link}{block_prefix}  <span dir={direction}>{desc}</span>"
+        
+        last_child = child
+        last_child_type = child_type
 
-    return readme_template.format(المحتوى=content)
+    return content
 
 
 def get_page_data(notionpy=False):
@@ -139,19 +147,21 @@ def generate_pdf_file():
 
 
 if __name__ == "__main__":
-    file_content = get_readme_content()
+    page_data = get_page_data(notionpy=True)
+    page_md = get_markdown(page_data)
+    readme_content = readme_template.format(المحتوى=page_md)
 
     with open(README_FILE, "w") as f:
-        f.write(file_content)
+        f.write(readme_content)
 
     toc = md_toc.build_toc(README_FILE)
     print("👇جدول المحتويات")
     print("---------------------")
     print(toc)
-    file_content = file_content.replace("<!--TOC-->", toc)
+    readme_content = readme_content.replace("<!--TOC-->", toc)
 
     with open(README_FILE, "w") as f:
-        f.write(file_content)
+        f.write(readme_content)
 
     if "--بدإ" in sys.argv or "--pdf" in sys.argv:
         generate_pdf_file()

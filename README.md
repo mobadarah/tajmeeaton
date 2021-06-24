@@ -7,54 +7,50 @@
 
 مستودع يحتوي على مجموعة من المشاريع (وليس حصرا لجميعها) للنهوض بالأمة، وبشكل رئيسي تلك المشاريع مفتوحة المصدر مثل لغات بالبرمجة ومعالجة اللغات الطبيعية م.ل.ط (ذكاء إصطناعي)، بالإضافة لمشاريع متعلقة بالدين الإسلامي مثل تطبيقات القرآن والأذكار والأذان وغيرها.
 
+اكمل التصفح هنا إذا كنت تريد أن ترى المجهود الذي يبذل، اكمل التصفح إذا كنت تريد أن تساهم معنا في نهضة حقيقية، يوجد أيضا مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة.
+
 __كيفية المساهمة:__
 
 يمكنك المساهمة بتوضيح خطأ لغوي أو اقتراح تحسينات أو إضافة أعمال ومشاريع أخرى تخدم الأمة الإسلامية، يمكنك فتح issue أو المشاركة في [النقاشات](https://github.com/MuhammadSawalhy/tajmeeaton/discussions/2).
 
 __ملاحظات:__
+- ستجد أنه معظم الوصف هنا بالإنجليزية لأن الوصف مأخوذ كما هو من المشاريع عن طريق الكود في [.\انتج-ملف-اقرأني](https://github.com/MuhammadSawalhy/tajmeeaton/blob/main/انتج-ملف-اقرأني)، وهذا مما أأسف له، من واقعنا الذي أسعى لتغييره، والله من وراء القصد
 - التجميعة على موقع نوشن: [https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb](https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb)
 - هنا أيضا [مستودع KL14NT/AIUX](https://github.com/KL13NT/AIUX) يهدف لتحسين تواجد اللغة العربية وتحسين تجربة المستخدم مع اللغة
 - توجد أيضا قائمة مجمع بها مشاريع تخدم الغة العربية على هذا المستودع، [01walid/awesome-arabic](https://github.com/01walid/awesome-arabic)
 - لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
-- فليكن هدفك الوحيد رضا الله، ولذا أنصح برخصة "[وقف](https://ojuba.org/waqf-2.0:%D8%B1%D8%AE%D8%B5%D8%A9_%D9%88%D9%82%D9%81_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9)" بدلا من رخص مثل GPL وال MIT، وغيرهما. كما يمكن إنشاء رخصة بها شورط مختلفة منطلقة من نفس المبدأ لمشاريعك المستقبلية إن شاء الله
+- فليكن هدفك الوحيد رضا الله، ولذا أنصح برخصة "[وقف](https://ojuba.org/waqf-2.0:%D8%B1%D8%AE%D8%B5%D8%A9_%D9%88%D9%82%D9%81_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9)" بدلا من رخص مثل GPL وال MIT، وغيرهما. كما يمكن إنشاء رخصة بها شروط مختلفة منطلقة من نفس المبدأ لمشاريعك المستقبلية إن شاء الله
 
 ---
 
-- [التجميعة](#التجميعة)
-  - [تعريب العلوم](#تعريب-العلوم)
-  - [لغات برمجة عربية](#لغات-برمجة-عربية)
-  - [ترجمات](#ترجمات)
-  - [معالجة اللغات الطبيعية (مُ.لُ.طَ)](#معالجة-اللغات-الطبيعية-ملط)
-    - [تصحيح الأخطاء](#تصحيح-الأخطاء)
-    - [تشكيل الكلم](#تشكيل-الكلم)
-    - [جذر الكلمة](#جذر-الكلمة)
-    - [استخراج الكلم من الصور](#استخراج-الكلم-من-الصور)
-    - [النص لصوت 🔊](#النص-لصوت-)
-  - [خطوط (منصدات الخط)](#خطوط-منصدات-الخط)
-  - [الوصولية (A11y)](#الوصولية-a11y)
-  - [تقنية - عام](#تقنية---عام)
+- [مشاريع مطلوب توجدها](#مشاريع-مطلوب-توجدها)
+- [تعريب العلوم](#تعريب-العلوم)
+- [لغات برمجة عربية](#لغات-برمجة-عربية)
+- [ترجمات](#ترجمات)
+- [معالجة اللغات الطبيعية (مُ.لُ.طَ)](#معالجة-اللغات-الطبيعية-ملط)
+  - [استخراج الكلم من الصور 🖼️](#استخراج-الكلم-من-الصور-)
+  - [النص من وإلى الصوت 🔊](#النص-من-وإلى-الصوت-)
+  - [تصحيح الأخطاء ✅️](#تصحيح-الأخطاء-)
+  - [تَشْكِيلُ الكَلِمِ](#تشكيل-الكلم)
+  - [ج ذ ر الكلمة](#ج-ذ-ر-الكلمة)
+- [خطوط (منصدات الخط)](#خطوط-منصدات-الخط)
+- [الوصولية (A11y)](#الوصولية-a11y)
+- [تقنية - عام](#تقنية---عام)
 - [خدمة الدين الإسلامي](#خدمة-الدين-الإسلامي)
+  - [قرآن](#قرآن)
+  - [حديث](#حديث)
+  - [منوعات](#منوعات)
 
 
 ---
 
-# التجميعة
+# مشاريع مطلوب توجدها
 
-- https://github.com/ejtaal/mabhath
+مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة، وإذا كنت تريد تنمية مهاراتك في مشاريع بسيطة والمشاريع المطلوبة تتطلب خبرة وجهدا، أو ليست في مجالك وأردت المساهمة، ساهم في تنمية المشاريع الموجودة بالفعل، ستجد الكثير قد مضى عليه فترة من الزمن، ويحتاج بعض التحديثات والتنمية.
 
-  <span dir=ltr>Mabhath Talib - A student's place of research An Arabic text based dictionary, similar to http://www.baheth.net/ but better :) (Mabhathu Talib, a student's place of research) This project aims to provide an online Arabic -> Arabic and perhaps even some english dictionary interface. The scripts that parse the dictionaries only work with text based files.</span>
+- https://github.com/ejtaal/mr
 
-- https://github.com/asrajeh/arabic-tts
-
-  <span dir=ltr>Arabic TTS ( الناطق العربي ). Contribute to asrajeh/arabic-tts development by creating an account on GitHub.</span>
-
-- https://github.com/nawarhalabi/festival-tts-arabic-voices-docker
-
-  <span dir=ltr>A Docker image for a relatively light-weight full Arabic speech synthesis system $ git clone https://github.com/nawarhalabi/festival-tts-arabic-voices-docker $ cd festival-tts-arabic-voices-docker $ docker kill festival $ docker rm festival $ docker build -t festival-arabic:latest . $ docker run -p 8080:8080 -v :/tts --name festival festival-arabic:latest This will take about 20 mins to finish.</span>
-
-- https://github.com/alif-type/
-
-  <span dir=rtl></span>
+  <span dir=ltr>Arabic - English word based dictionaries compilation - ejtaal/mr</span>
 
 - https://github.com/AqeelAT/arabic-apis
 
@@ -64,15 +60,7 @@ __ملاحظات:__
 
   <span dir=ltr>Full RTL version of SimpleMDE Markdown Editor for Arabic, Persian, and Urdu languages. npm install simplemde-rtl --save Via jsDelivr. Please note, jsDelivr may take a few days to update to the latest release.</span>
 
-- https://github.com/youssefsharief/arabic-tacotron-tts
-
-  <span dir=ltr>An implementation of Tacotron speech synthesis in TensorFlow for Arabic. Check Audio Samples from models trained using this repo on Nawar Halabi's speech corpus In April 2017, Google published a paper, Tacotron: Towards End-to-End Speech Synthesis, where they present a neural text-to-speech model that learns to synthesize speech directly from (text, audio) pairs.</span>
-
-- https://github.com/Fahad-Alsaidi/raqin
-
-  <span dir=rtl>يهدف المشروع إلى إيجاد طريقة لرقمنة كتب التراث العربي عن طريق الجهد الموزع بين فئة كبيرة من الناس.</span>
-
-## تعريب العلوم
+# تعريب العلوم
 
 المقصود هنا هو تعريبها تعريبا حقيقيا بإيجاد بديل للمصطلحات الإنجليزية في لغتنا الغزيرة بالكلمات والجزور، وليس مجرد ترجمة للكلام مع ترك المصطلحات، مع أهمية فعل ذلك أيضا لكن ليس بالقيمة الكبيرة المضافة.
 
@@ -82,7 +70,15 @@ __ملاحظات:__
 
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
 
-## لغات برمجة عربية
+- https://github.com/forabi/arabic-tech-terminology/blob/master/en-ar.md
+
+  <span dir=ltr>Contribute to forabi/arabic-tech-terminology development by creating an account on GitHub.</span>
+
+- https://github.com/softvenue/i18n
+
+  <span dir=rtl>يحتوي هذا المشروع على المصطلحات التقنية الإنجليزية وما يقابلها في اللغة العربية، وذلك بقصد المساعدة في تعريب التوثيقات الخاصة بكافة التقنيات المتعلقة بعلوم الحاسوب. قريبا : SQL, XML, HTML يعاني المحتوى العربي من نقص فادح خصوصا عندما يتعلق الأمر بمجال البرمجة وعلوم الحاسوب ولذلك ارتأينا أن نقوم بالمبادرة وأن نبدأ في توفير ترجمة للمصطلحات التقنية المستعصية لغوياً وللاستعانة بها في تعريب تقنيات ومجالات أخرى مستقبلا.</span>
+
+# لغات برمجة عربية
 
 - https://github.com/javascript-in-arabic/core
 
@@ -120,13 +116,13 @@ __ملاحظات:__
 
   <span dir=ltr>Noor is a simple, yet aHmazing arabic programming language. It it is currently in development mode and is being further defined and refined. It is implemented in Javascript. Noor comes with an IDE built to make it easy to write code in an arabic environment. Noor is still in development.</span>
 
-## ترجمات
+# ترجمات
 
 - https://github.com/javascript-tutorial/ar.javascript.info
 
   <span dir=rtl></span>
 
-## معالجة اللغات الطبيعية (مُ.لُ.طَ)
+# معالجة اللغات الطبيعية (مُ.لُ.طَ)
 
 - https://github.com/linuxscout/arabicnlptoolslist
 
@@ -184,33 +180,11 @@ __ملاحظات:__
 
   <span dir=ltr>Generating Arabic poems using Markov chains. Check out this YouTube video ( in Arabic) to see how I built this project. pip install pandas pip install pickle pip install markovify pip install tqdm This project is licensed under the MIT License - see the LICENSE.md file for details</span>
 
-### تصحيح الأخطاء
+## استخراج الكلم من الصور 🖼️
 
-- http://ghalatawi.sourceforge.net/
+- https://github.com/Fahad-Alsaidi/raqin
 
-  <span dir=rtl>التصحيح الإملائي من أهم الأدوات المستعملة في النشر والكتابة الإلكترونية، وتستعمل في البحث والاستعلامات، كما يعد من أهم الأدوات المرافقة للبرامج المكتبية. وفي بعض الحالات نحتاج لما يسمى بالتصحيح التلقائي للكلمات، وهو اقتراح تصحيح لأخطاء شائعة في الكتابة، مثل قلب حرفين، أو عدم الضغط على زر ما لإعطاء كلمة خاطئة، وتشيع في الكتابة بالعربية بعض الأخطاء مثل عدم التفريق بين همزة الوصل وهمزة القطع، والخلط بين الضاد والظاء، وإغفال نقطتي الياء، وكتابة التاء المربوطة هاء.</span>
-
-### تشكيل الكلم
-
-- https://github.com/linuxscout/mishkal
-
-  <span dir=ltr>Mishkal Arabic text vocalization software مشكال لتشكيل النصوص العربية Developpers: Taha Zerrouki: http://tahadz.com taha dot zerrouki at gmail dot com You can Install Mishkal as library or Software Clone mishkal project from GitHub: git clone https://github.com/linuxscout/mishkal.git Install necessary packages: pip install -r miskal/requirements.txt requirments - pyarabic : basic arabic library</span>
-
-- https://github.com/Barqawiz/Shakkala
-
-  <span dir=ltr>Shakkala project use recurrent neural network for Arabic text vocalization to automatically form Arabic characters (تشكيل الحروف) which can be used to enhance text-to-speech systems. This model can be used in many applications such as enhance text-to-speech systems or search results. Execute following commands: cd requirements pip install -r requirements.txt Check full example in (demo.py) file.</span>
-
-### جذر الكلمة
-
-- https://github.com/assem-ch/arabicstemmer
-
-  <span dir=ltr>This is an algorithm for Arabic stemming written on Snowball framework language. If offers light stemming and text normalization. This is a sample of results: They are already attached as git submodules so just run: $ git submodule update --init --recursive $ make run_root الطالب طلب We configured tests to run against snowball-data arabic sample to test speed, grouping factor and precision.</span>
-
-- https://github.com/ejtaal/jsastem
-
-  <span dir=ltr>This little project aims to create a simple arabic stemmer implemented in JavaScript. Good question. Because I need one for my other project, Mabhathu Tulab (A student's place of research) which is an Arabic - Arabic dictionary, similar to http://baheth.info but better of course ;) Its main feature is that the user may click on any word of a dictionary entry that may then be further explained by an overlay.</span>
-
-### استخراج الكلم من الصور
+  <span dir=rtl>يهدف المشروع إلى إيجاد طريقة لرقمنة كتب التراث العربي عن طريق الجهد الموزع بين فئة كبيرة من الناس.</span>
 
 - https://github.com/ARBML
 
@@ -236,11 +210,23 @@ __ملاحظات:__
 
   <span dir=ltr>Model uses Named Entity Recognition concept to tag words in arabic text. It consists of Bi-directional GRU units(One forward and the other is backward) and a CRF layer referenced from https://arxiv.org/pdf/1508.01991v1.pdf Model is trained on ANERCorp dataset. And uses FastText's Arabic vectors for word embedding. No.</span>
 
-### النص لصوت 🔊
+## النص من وإلى الصوت 🔊
+
+- https://github.com/nawarhalabi/festival-tts-arabic-voices-docker
+
+  <span dir=ltr>A Docker image for a relatively light-weight full Arabic speech synthesis system $ git clone https://github.com/nawarhalabi/festival-tts-arabic-voices-docker $ cd festival-tts-arabic-voices-docker $ docker kill festival $ docker rm festival $ docker build -t festival-arabic:latest . $ docker run -p 8080:8080 -v :/tts --name festival festival-arabic:latest This will take about 20 mins to finish.</span>
 
 - https://github.com/ARBML/klaam
 
   <span dir=ltr>Arabic speech recognition, classification and text-to-speech using many advanced models like wave2vec and fastspeech2. This repository allows training and prediction using pretrained models. There are two avilable models for recognition trageting MSA and egyptian dialect . You can set any of them using the lang attribute We currently support four models, three of them are avilable on transformers.</span>
+
+- https://github.com/asrajeh/arabic-tts
+
+  <span dir=ltr>Arabic TTS ( الناطق العربي ). Contribute to asrajeh/arabic-tts development by creating an account on GitHub.</span>
+
+- https://github.com/youssefsharief/arabic-tacotron-tts
+
+  <span dir=ltr>An implementation of Tacotron speech synthesis in TensorFlow for Arabic. Check Audio Samples from models trained using this repo on Nawar Halabi's speech corpus In April 2017, Google published a paper, Tacotron: Towards End-to-End Speech Synthesis, where they present a neural text-to-speech model that learns to synthesize speech directly from (text, audio) pairs.</span>
 
 - http://en.arabicspeechcorpus.com/
 
@@ -250,19 +236,85 @@ __ملاحظات:__
 
   <span dir=ltr>HTS Arabic voice for Festival TTS: is an arabic voice trained by HTS technologie to work on Festival TTS system. The voice is HMM trained on Nawar Arabic Speech Corpus. You can test the voice with diacritics on: http://ar.arabicspeechcorpus.com/ Install necessary packages: sudo apt-get install festival sudo apt-get install htsengine You can install Festival from pakcage manager from your linux distribution.</span>
 
-## خطوط (منصدات الخط)
+- https://github.com/malayyoub/Ahkam-Al-Tajweed
+
+  <span dir=ltr>This repository is related to our work on automatically determining correct application of basic Quranic recitation rules. Raw data: https://www.researchgate.net/publication/327869102 Please, cite the following papers if you utilize the resources in this project:</span>
+
+## تصحيح الأخطاء ✅️
+
+- http://ghalatawi.sourceforge.net/
+
+  <span dir=rtl>التصحيح الإملائي من أهم الأدوات المستعملة في النشر والكتابة الإلكترونية، وتستعمل في البحث والاستعلامات، كما يعد من أهم الأدوات المرافقة للبرامج المكتبية. وفي بعض الحالات نحتاج لما يسمى بالتصحيح التلقائي للكلمات، وهو اقتراح تصحيح لأخطاء شائعة في الكتابة، مثل قلب حرفين، أو عدم الضغط على زر ما لإعطاء كلمة خاطئة، وتشيع في الكتابة بالعربية بعض الأخطاء مثل عدم التفريق بين همزة الوصل وهمزة القطع، والخلط بين الضاد والظاء، وإغفال نقطتي الياء، وكتابة التاء المربوطة هاء.</span>
+
+## تَشْكِيلُ الكَلِمِ
+
+- https://github.com/linuxscout/mishkal
+
+  <span dir=ltr>Mishkal Arabic text vocalization software مشكال لتشكيل النصوص العربية Developpers: Taha Zerrouki: http://tahadz.com taha dot zerrouki at gmail dot com You can Install Mishkal as library or Software Clone mishkal project from GitHub: git clone https://github.com/linuxscout/mishkal.git Install necessary packages: pip install -r miskal/requirements.txt requirments - pyarabic : basic arabic library</span>
+
+- https://github.com/Barqawiz/Shakkala
+
+  <span dir=ltr>Shakkala project use recurrent neural network for Arabic text vocalization to automatically form Arabic characters (تشكيل الحروف) which can be used to enhance text-to-speech systems. This model can be used in many applications such as enhance text-to-speech systems or search results. Execute following commands: cd requirements pip install -r requirements.txt Check full example in (demo.py) file.</span>
+
+- https://github.com/AliOsm/arabic-text-diacritization
+
+  <span dir=ltr>This repository contains the dataset, helpers, and systems comparison for our paper on Arabic Text Diacritization: " Arabic Text Diacritization Using Deep Neural Networks", Ali Fadel, Ibraheem Tuffaha, Bara' Al-Jawarneh, and Mahmoud Al-Ayyoub, ICCAIS 2019.</span>
+
+- https://github.com/AliOsm/shakkelha
+
+  <span dir=ltr>This repository contains the models, dataset, helpers, and systems' comparison for our paper on Arabic Text Diacritization: " Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation", Ali Fadel, Ibraheem Tuffaha, Bara' Al-Jawarneh and Mahmoud Al-Ayyoub, EMNLP-IJCNLP 2019.</span>
+
+## ج ذ ر الكلمة
+
+- https://github.com/assem-ch/arabicstemmer
+
+  <span dir=ltr>This is an algorithm for Arabic stemming written on Snowball framework language. If offers light stemming and text normalization. This is a sample of results: They are already attached as git submodules so just run: $ git submodule update --init --recursive $ make run_root الطالب طلب We configured tests to run against snowball-data arabic sample to test speed, grouping factor and precision.</span>
+
+- https://github.com/ejtaal/jsastem
+
+  <span dir=ltr>This little project aims to create a simple arabic stemmer implemented in JavaScript. Good question. Because I need one for my other project, Mabhathu Tulab (A student's place of research) which is an Arabic - Arabic dictionary, similar to http://baheth.info but better of course ;) Its main feature is that the user may click on any word of a dictionary entry that may then be further explained by an overlay.</span>
+
+# خطوط (منصدات الخط)
+
+- https://github.com/aliftype
+
+  <span dir=ltr>Anti (أنتِ) is a cryptic and playful Arabic typeface AGPL-3.0 Updated 1 6 0 Jun 22, 2021 Mada (مدى) is a geometric, low-contrast Arabic typeface HTML Updated 1 5 0 Jun 15, 2021 Python 0 Updated 2 0 Apr 21, 2021 Makefile 0 Updated 8 0 Apr 17, 2021 Unicode-encoded Quran data Python Updated 15 57 0 Mar 17, 2021 Forked from googlefonts/ufo2ft A bridge from UFOs to FontTools objects (and therefore, OTFs and TTFs).</span>
+
+  - https://github.com/aliftype/amiri
+
+    <span dir=ltr>Amiri (أميري) is a classical Arabic typeface in Naskh style for typesetting books and other running text. Amiri is a revival of the beautiful typeface pioneered in early 20th century by Bulaq Press in Cairo, also known as Amiria Press, after which the font is named.</span>
+
+  - https://github.com/aliftype/aref-ruqaa
+
+    <span dir=ltr>Aref Ruqaa (رقعة عارف) is an Arabic typeface that aspires to capture the essence of the classical Ruqaa calligraphic style. The Arabic part of Aref Ruqaa is designed by the Arabic calligrapher and type designer Abdullah Aref, while the Latin part is based on AMS Euler, but spaced for regular text rather than mathematics.</span>
+
+  - https://github.com/aliftype/qahiri
+
+    <span dir=ltr>Qahiri is a Kufic typeface based on the modernized and regularized old manuscript Kufic calligraphy style of the late master of Arabic calligraphyMohammad Abdul Qadir . Following the convention of naming Kufic styles after the cities they appeared in, Qahiri (قاهري) is named after the city of Cairo, Egypt (القاهرة).</span>
+
+- https://github.com/aiaf/kawkab-mono
+
+  <span dir=ltr>Kawkab Mono (كوكب مونو) is a monospaced Arabic typeface. It's designed for code and text-editing in particular, and whenever having a fixed-pitch font is necessary, such as when composing tabular data using text. There's a dearth in monospaced Arabic fonts and Kawkab comes to fill a void in this niche.</span>
+
+- https://github.com/aiaf/nimra
+
+  <span dir=ltr>Nimra is a numeric MICR typeface containing the original E13B glyphs plus Eastern Arabic numerals. For more information, visit the website at: https://makkuk.com/nimra/ Nimra is available under the SIL Open Font License v1.1. See the accompanying OFL.txt file for details.</span>
 
 - https://github.com/Gue3bara/Cairo
 
   <span dir=ltr>Cairo is a contemporary Arabic and Latin typeface family. Mohamed Gaber extended the famous Latin typeface family Titillum Web to support the Arabic script, with a design that is based on the Kufi calligraphic style. Cairo balances classic and contemporary tastes with wide open counters and short ascenders and descenders that minimize length while maintaining easy readability.</span>
 
-## الوصولية (A11y)
+# الوصولية (A11y)
 
 - https://github.com/KL13NT/AIUX
 
   <span dir=ltr>The Arabic Initiative for User Experience (AIUX) is an idea for building a better world for Arabic-speaking users. It outlines ways in which the Arabic community could enhance existing tooling and content to provide a better UX for Arabic-speaking users.</span>
 
-## تقنية - عام
+- https://github.com/drelhaj/OsmanReadability
+
+  <span dir=ltr>The tool is a Java open source to calculate readability for Arabic text with and without diacritics (Tashkeel). The tool works better with diacritics added in (we provide a method to calculate readability even with plain Arabic text, OSMAN will automatically estimate syllables and calculate readability even when no tashkeel is added in).</span>
+
+# تقنية - عام
 
 - https://github.com/ojuba-org
 
@@ -288,15 +340,29 @@ __ملاحظات:__
 
   <span dir=rtl>إذا حاولت من قبل البحث عن طريقة لجعل Gitbook يدعم العربية ولم تجد، أو إذا ما كنت قد بحثت عن أي سكربت محتوى بسيط يدعم اللغة العربية ليقرأ ملفّات Markdown ويعرضها على شكل كتاب ولم تجد كذلك، فحينها ستسرّ عندما تتعرف إلى سكربت مجلّد. سكربت مجلّد هو تطبيق ويب مكتوب ببايثون وإطار العمل فلاسك.</span>
 
-- https://github.com/softvenue/i18n
-
-  <span dir=rtl>يحتوي هذا المشروع على المصطلحات التقنية الإنجليزية وما يقابلها في اللغة العربية، وذلك بقصد المساعدة في تعريب التوثيقات الخاصة بكافة التقنيات المتعلقة بعلوم الحاسوب. قريبا : SQL, XML, HTML يعاني المحتوى العربي من نقص فادح خصوصا عندما يتعلق الأمر بمجال البرمجة وعلوم الحاسوب ولذلك ارتأينا أن نقوم بالمبادرة وأن نبدأ في توفير ترجمة للمصطلحات التقنية المستعصية لغوياً وللاستعانة بها في تعريب تقنيات ومجالات أخرى مستقبلا.</span>
-
 - https://rtlstyling.com/posts/rtl-styling
 
   <span dir=ltr>Do you like my content? You can support and buy me a coffee. Thank you so much! Over 292 million people around the world speak Arabic as their first language. Arabic (al-Arabiyyah, pronounced /al ʕarabijja/, /ʕarabiː/) is my native language, and I sometimes build websites that need to support both left-to-right (LTR) and right-to-left (RTL) styles.</span>
 
 # خدمة الدين الإسلامي
+
+## قرآن
+
+- https://github.com/quran
+
+  <span dir=ltr>You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session.</span>
+
+  - https://github.com/quran/quran-core
+
+    <span dir=ltr>Description goes here. Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet. Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it. Fork the project. Start a feature/bugfix branch.</span>
+
+  - https://github.com/quran/ayah-detection
+
+    <span dir=rtl>بسم الله الرحمن الرحيم Quran utils is a set of scripts for detecting ayat in quran images. it's very rough, but it definitely works (tested on 3 sets of images - shamerly, qaloon, and warsh images). ayat.py - detects ayah images in a particular image.</span>
+
+  - https://github.com/quran/tajweed
+
+    <span dir=rtl>بسم الله الرحمن الرحيم In the name of Allah, Most Gracious, Most Merciful The purpose of this project is to experiment with "tajweed syntax highlighting," or writing algorithms to color code the various tajweed rules as is found in the tajweed mus7af.</span>
 
 - https://github.com/ojuba-org/othman
 
@@ -306,18 +372,28 @@ __ملاحظات:__
 
   <span dir=ltr>https://arfedora.blogspot.com https://github.com/ojuba-org/othman Port To Python3 Add Switch To On/Off Dark Theme. Support Change Background/Foreground Color. Make Windows exe (pyinstaller/msys/mingw64) Add Option To add Amiri Font (Windows Only). support Audio Tilawa (mp3 from ayat) And add Option To add Audio tilawa from ayat files (*.ayt). support Auto Scroll + Run Tilawa .</span>
 
-- https://github.com/challenge-azkar/tanafaso-frontend
-
-  <span dir=ltr>A Flutter application for Muslims that help them challenge and motivate themselves and their friends to read Azkar in a fun way. On Play Store & On App Store There are a lot of ways you can contribute to this project.</span>
-
 - https://github.com/Qutuf/Qutuf
 
   <span dir=ltr>Qutuf (قُطُوْف): An Arabic Morphological analyzer and Part-Of-Speech tagger as an Expert System. - Qutuf/Qutuf</span>
+
+- https://github.com/Yassine-Lafryhi/Ayaaty
+
+  <span dir=ltr>A JAVA desktop application to listen to quran, show quranic supplications and Dhikr Install the fonts, which are located in /fonts/ Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</span>
+
+- https://github.com/malayyoub/Ahkam-Al-Tajweed
+
+  <span dir=ltr>This repository is related to our work on automatically determining correct application of basic Quranic recitation rules. Raw data: https://www.researchgate.net/publication/327869102 Please, cite the following papers if you utilize the resources in this project:</span>
+
+## حديث
 
 - https://github.com/hadithhouse/HadithHouseApi
 
   <span dir=ltr>You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session.</span>
 
-- https://github.com/Yassine-Lafryhi/Ayaaty
+## منوعات
 
-  <span dir=ltr>A JAVA desktop application to listen to quran, show quranic supplications and Dhikr Install the fonts, which are located in /fonts/ Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</span>
+- https://github.com/challenge-azkar/tanafaso-frontend
+
+  <span dir=ltr>A Flutter application for Muslims that help them challenge and motivate themselves and their friends to read Azkar in a fun way. On Play Store & On App Store There are a lot of ways you can contribute to this project.</span>
+
+
