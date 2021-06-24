@@ -30,8 +30,13 @@ __ملاحظات:__
 ---
 
 - [مشاريع مطلوب توجدها](#مشاريع-مطلوب-توجدها)
+- [خدمة الدين الإسلامي](#خدمة-الدين-الإسلامي)
+  - [قرآن](#قرآن)
+  - [حديث](#حديث)
+  - [منوعات](#منوعات)
 - [تعريب العلوم](#تعريب-العلوم)
 - [لغات برمجة عربية](#لغات-برمجة-عربية)
+- [اللغة العربية](#اللغة-العربية)
 - [ترجمات](#ترجمات)
 - [معالجة اللغات الطبيعية (مُ.لُ.طَ)](#معالجة-اللغات-الطبيعية-ملط)
   - [استخراج الكلم من الصور 🖼️](#استخراج-الكلم-من-الصور-)
@@ -42,10 +47,6 @@ __ملاحظات:__
 - [خطوط (منصدات الخط)](#خطوط-منصدات-الخط)
 - [الوصولية (A11y)](#الوصولية-a11y)
 - [تقنية - عام](#تقنية---عام)
-- [خدمة الدين الإسلامي](#خدمة-الدين-الإسلامي)
-  - [قرآن](#قرآن)
-  - [حديث](#حديث)
-  - [منوعات](#منوعات)
 - [الرخصة](#الرخصة)
 
 
@@ -55,21 +56,61 @@ __ملاحظات:__
 
 مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة، وإذا كنت تريد تنمية مهاراتك في مشاريع بسيطة والمشاريع المطلوبة تتطلب خبرة وجهدا، أو ليست في مجالك وأردت المساهمة، ساهم في تنمية المشاريع الموجودة بالفعل، ستجد الكثير قد مضى عليه فترة من الزمن، ويحتاج بعض التحديثات والتنمية.
 
-> ستم الملئ إن شاء الله
+> سيتم الملئ إن شاء الله
 
 > قم بفتح issue وقدم اقتراحا
 
-- https://github.com/ejtaal/mr
+# خدمة الدين الإسلامي
 
-  <span dir=ltr>Arabic - English word based dictionaries compilation - ejtaal/mr</span>
+## قرآن
 
-- https://github.com/AqeelAT/arabic-apis
+- https://github.com/quran
 
-  <span dir=rtl>قائمة تشاركية لجمع الواجهات البرمجية العربية في مكان واحد هذه الفكرة مستوحاه من مشروع Public Apis أرجو منك المشاركة في اضافة الواجهات إلى هذه القائمة، سواء بمشاركة واجهات تعرفها، أو بإنشاء واجهات جديدة لملئ الفراغ التقني العربي.</span>
+  <span dir=ltr>You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session.</span>
 
-- https://github.com/imAbdelhadi/simplemde-rtl
+  - https://github.com/quran/quran-core
 
-  <span dir=ltr>Full RTL version of SimpleMDE Markdown Editor for Arabic, Persian, and Urdu languages. npm install simplemde-rtl --save Via jsDelivr. Please note, jsDelivr may take a few days to update to the latest release.</span>
+    <span dir=ltr>Description goes here. Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet. Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it. Fork the project. Start a feature/bugfix branch.</span>
+
+  - https://github.com/quran/ayah-detection
+
+    <span dir=rtl>بسم الله الرحمن الرحيم Quran utils is a set of scripts for detecting ayat in quran images. it's very rough, but it definitely works (tested on 3 sets of images - shamerly, qaloon, and warsh images). ayat.py - detects ayah images in a particular image.</span>
+
+  - https://github.com/quran/tajweed
+
+    <span dir=rtl>بسم الله الرحمن الرحيم In the name of Allah, Most Gracious, Most Merciful The purpose of this project is to experiment with "tajweed syntax highlighting," or writing algorithms to color code the various tajweed rules as is found in the tajweed mus7af.</span>
+
+- https://github.com/ojuba-org/othman
+
+  <span dir=ltr>Othman Electronic Quran Browser displays Quranic text in Othmani script style as written under authority of Othman ibn Affan the companion of prophet Muhammad PBUH Othman project features fast search, autoscrolling, copy Quranic text to clipboard. You can't perform that action at this time. You signed in with another tab or window.</span>
+
+- https://github.com/yucefsourani/albasheer-electronic-quran-browser
+
+  <span dir=ltr>https://arfedora.blogspot.com https://github.com/ojuba-org/othman Port To Python3 Add Switch To On/Off Dark Theme. Support Change Background/Foreground Color. Make Windows exe (pyinstaller/msys/mingw64) Add Option To add Amiri Font (Windows Only). support Audio Tilawa (mp3 from ayat) And add Option To add Audio tilawa from ayat files (*.ayt). support Auto Scroll + Run Tilawa .</span>
+
+- https://github.com/Qutuf/Qutuf
+
+  <span dir=ltr>Qutuf (قُطُوْف): An Arabic Morphological analyzer and Part-Of-Speech tagger as an Expert System. - Qutuf/Qutuf</span>
+
+- https://github.com/Yassine-Lafryhi/Ayaaty
+
+  <span dir=ltr>A JAVA desktop application to listen to quran, show quranic supplications and Dhikr Install the fonts, which are located in /fonts/ Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</span>
+
+- https://github.com/malayyoub/Ahkam-Al-Tajweed
+
+  <span dir=ltr>This repository is related to our work on automatically determining correct application of basic Quranic recitation rules. Raw data: https://www.researchgate.net/publication/327869102 Please, cite the following papers if you utilize the resources in this project:</span>
+
+## حديث
+
+- https://github.com/hadithhouse/HadithHouseApi
+
+  <span dir=ltr>You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session.</span>
+
+## منوعات
+
+- https://github.com/challenge-azkar/tanafaso-frontend
+
+  <span dir=ltr>A Flutter application for Muslims that help them challenge and motivate themselves and their friends to read Azkar in a fun way. On Play Store & On App Store There are a lot of ways you can contribute to this project.</span>
 
 # تعريب العلوم
 
@@ -126,6 +167,12 @@ __ملاحظات:__
 - https://github.com/SimplyAhmazing/noor
 
   <span dir=ltr>Noor is a simple, yet aHmazing arabic programming language. It it is currently in development mode and is being further defined and refined. It is implemented in Javascript. Noor comes with an IDE built to make it easy to write code in an arabic environment. Noor is still in development.</span>
+
+# اللغة العربية
+
+- https://github.com/ejtaal/mr
+
+  <span dir=ltr>Arabic - English word based dictionaries compilation - ejtaal/mr</span>
 
 # ترجمات
 
@@ -355,57 +402,13 @@ __ملاحظات:__
 
   <span dir=ltr>Do you like my content? You can support and buy me a coffee. Thank you so much! Over 292 million people around the world speak Arabic as their first language. Arabic (al-Arabiyyah, pronounced /al ʕarabijja/, /ʕarabiː/) is my native language, and I sometimes build websites that need to support both left-to-right (LTR) and right-to-left (RTL) styles.</span>
 
-# خدمة الدين الإسلامي
+- https://github.com/AqeelAT/arabic-apis
 
-## قرآن
+  <span dir=rtl>قائمة تشاركية لجمع الواجهات البرمجية العربية في مكان واحد هذه الفكرة مستوحاه من مشروع Public Apis أرجو منك المشاركة في اضافة الواجهات إلى هذه القائمة، سواء بمشاركة واجهات تعرفها، أو بإنشاء واجهات جديدة لملئ الفراغ التقني العربي.</span>
 
-- https://github.com/quran
+- https://github.com/imAbdelhadi/simplemde-rtl
 
-  <span dir=ltr>You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session.</span>
-
-  - https://github.com/quran/quran-core
-
-    <span dir=ltr>Description goes here. Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet. Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it. Fork the project. Start a feature/bugfix branch.</span>
-
-  - https://github.com/quran/ayah-detection
-
-    <span dir=rtl>بسم الله الرحمن الرحيم Quran utils is a set of scripts for detecting ayat in quran images. it's very rough, but it definitely works (tested on 3 sets of images - shamerly, qaloon, and warsh images). ayat.py - detects ayah images in a particular image.</span>
-
-  - https://github.com/quran/tajweed
-
-    <span dir=rtl>بسم الله الرحمن الرحيم In the name of Allah, Most Gracious, Most Merciful The purpose of this project is to experiment with "tajweed syntax highlighting," or writing algorithms to color code the various tajweed rules as is found in the tajweed mus7af.</span>
-
-- https://github.com/ojuba-org/othman
-
-  <span dir=ltr>Othman Electronic Quran Browser displays Quranic text in Othmani script style as written under authority of Othman ibn Affan the companion of prophet Muhammad PBUH Othman project features fast search, autoscrolling, copy Quranic text to clipboard. You can't perform that action at this time. You signed in with another tab or window.</span>
-
-- https://github.com/yucefsourani/albasheer-electronic-quran-browser
-
-  <span dir=ltr>https://arfedora.blogspot.com https://github.com/ojuba-org/othman Port To Python3 Add Switch To On/Off Dark Theme. Support Change Background/Foreground Color. Make Windows exe (pyinstaller/msys/mingw64) Add Option To add Amiri Font (Windows Only). support Audio Tilawa (mp3 from ayat) And add Option To add Audio tilawa from ayat files (*.ayt). support Auto Scroll + Run Tilawa .</span>
-
-- https://github.com/Qutuf/Qutuf
-
-  <span dir=ltr>Qutuf (قُطُوْف): An Arabic Morphological analyzer and Part-Of-Speech tagger as an Expert System. - Qutuf/Qutuf</span>
-
-- https://github.com/Yassine-Lafryhi/Ayaaty
-
-  <span dir=ltr>A JAVA desktop application to listen to quran, show quranic supplications and Dhikr Install the fonts, which are located in /fonts/ Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</span>
-
-- https://github.com/malayyoub/Ahkam-Al-Tajweed
-
-  <span dir=ltr>This repository is related to our work on automatically determining correct application of basic Quranic recitation rules. Raw data: https://www.researchgate.net/publication/327869102 Please, cite the following papers if you utilize the resources in this project:</span>
-
-## حديث
-
-- https://github.com/hadithhouse/HadithHouseApi
-
-  <span dir=ltr>You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session.</span>
-
-## منوعات
-
-- https://github.com/challenge-azkar/tanafaso-frontend
-
-  <span dir=ltr>A Flutter application for Muslims that help them challenge and motivate themselves and their friends to read Azkar in a fun way. On Play Store & On App Store There are a lot of ways you can contribute to this project.</span>
+  <span dir=ltr>Full RTL version of SimpleMDE Markdown Editor for Arabic, Persian, and Urdu languages. npm install simplemde-rtl --save Via jsDelivr. Please note, jsDelivr may take a few days to update to the latest release.</span>
 
 # الرخصة
 
