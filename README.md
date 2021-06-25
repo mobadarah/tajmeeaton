@@ -23,7 +23,7 @@ __ملاحظات:__
 
 - توجد أيضا قائمة مجمع بها مشاريع تخدم الغة العربية على هذا المستودع، [01walid/awesome-arabic](https://github.com/01walid/awesome-arabic)
 
-- لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
+- لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، ومعظمها بَطُئ أو تَوقّف تطويره، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
 
 - فليكن هدفك الوحيد رضا الله، ولذا أنصح برخصة "[وقف](https://ojuba.org/waqf-2.0:%D8%B1%D8%AE%D8%B5%D8%A9_%D9%88%D9%82%D9%81_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9)" بدلا من رخص مثل GPL وال MIT، وغيرهما. كما يمكن إنشاء رخصة بها شروط مختلفة منطلقة من نفس المبدأ لمشاريعك المستقبلية إن شاء الله
 
@@ -33,16 +33,18 @@ __ملاحظات:__
 - [خدمة الدين الإسلامي](#خدمة-الدين-الإسلامي)
   - [قرآن](#قرآن)
   - [حديث](#حديث)
+  - [صلاة](#صلاة)
+  - [أذكار](#أذكار)
   - [منوعات](#منوعات)
 - [تعريب العلوم](#تعريب-العلوم)
 - [لغات برمجة عربية](#لغات-برمجة-عربية)
 - [اللغة العربية](#اللغة-العربية)
 - [ترجمات](#ترجمات)
 - [معالجة اللغات الطبيعية (مُ.لُ.طَ)](#معالجة-اللغات-الطبيعية-ملط)
-  - [استخراج الكلم من الصور 🖼️](#استخراج-الكلم-من-الصور-)
-  - [النص من وإلى الصوت 🔊](#النص-من-وإلى-الصوت-)
+  - [استخراج الكلم من الصور](#استخراج-الكلم-من-الصور)
+  - [النص من وإلى الصوت](#النص-من-وإلى-الصوت)
   - [تصحيح الأخطاء ✅️](#تصحيح-الأخطاء-)
-  - [تَشْكِيلُ الكَلِمِ](#تشكيل-الكلم)
+  - [تشكيل الكلم](#تشكيل-الكلم)
   - [ج ذ ر الكلمة](#ج-ذ-ر-الكلمة)
 - [خطوط (منصدات الخط)](#خطوط-منصدات-الخط)
 - [الوصولية (A11y)](#الوصولية-a11y)
@@ -80,6 +82,18 @@ __ملاحظات:__
 
     <span dir=rtl>بسم الله الرحمن الرحيم In the name of Allah, Most Gracious, Most Merciful The purpose of this project is to experiment with "tajweed syntax highlighting," or writing algorithms to color code the various tajweed rules as is found in the tajweed mus7af.</span>
 
+- https://github.com/Tarteel-io/tarteel-ml
+
+  <span dir=ltr>This repo is designed to house code related to Tarteel machine learning related tasks. 🔬 Specifically, things like: Model selection ✅ Preprocessing of data 🔉 Model training, validation, and and iteration 🔁 Code here is mostly experimental so check back regularly for updates. If you found this repo helpful, please keep it's contributors in your duaa 🙌.</span>
+
+- https://github.com/hci-lab/PyQuran
+
+  <span dir=ltr>PyQuran is a package which provides tools for Quranic Analysis and Arabic texts. It is still a small package which needs a lot of your effort. We believe that it is a seed of a fundamental general package for computations on Quran with Python, even at the most basic level which is simply retrieving Quran text.</span>
+
+- https://github.com/Crescent-Labs/iqra-web
+
+  <span dir=ltr>Iqra is a tool meant to allow Muslims to search the Quran using speech recognition. This repo contains the code for the website. There are also repos for the Android client and iOS client. The website's back-end is a Flask server, and the front-end is React combined with Redux.</span>
+
 - https://github.com/ojuba-org/othman
 
   <span dir=ltr>Othman Electronic Quran Browser displays Quranic text in Othmani script style as written under authority of Othman ibn Affan the companion of prophet Muhammad PBUH Othman project features fast search, autoscrolling, copy Quranic text to clipboard. You can't perform that action at this time. You signed in with another tab or window.</span>
@@ -92,19 +106,47 @@ __ملاحظات:__
 
   <span dir=ltr>Qutuf (قُطُوْف): An Arabic Morphological analyzer and Part-Of-Speech tagger as an Expert System. - Qutuf/Qutuf</span>
 
-- https://github.com/Yassine-Lafryhi/Ayaaty
+- https://github.com/moroclash/Visualization-Of-Quran
 
-  <span dir=ltr>A JAVA desktop application to listen to quran, show quranic supplications and Dhikr Install the fonts, which are located in /fonts/ Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</span>
+  <span dir=ltr>In this project, we count frequencies of Arabic letters based on any alphabetical systems you define. -> The APP It supports multiple filtrations based on: So it allows you to apply any sort of filtrations in order to fit your search aspects.</span>
 
 - https://github.com/malayyoub/Ahkam-Al-Tajweed
 
   <span dir=ltr>This repository is related to our work on automatically determining correct application of basic Quranic recitation rules. Raw data: https://www.researchgate.net/publication/327869102 Please, cite the following papers if you utilize the resources in this project:</span>
+
+- https://github.com/Yassine-Lafryhi/Ayaaty
+
+  <span dir=ltr>A JAVA desktop application to listen to quran, show quranic supplications and Dhikr Install the fonts, which are located in /fonts/ Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</span>
 
 ## حديث
 
 - https://github.com/hadithhouse/HadithHouseApi
 
   <span dir=ltr>You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session.</span>
+
+## صلاة
+
+- https://github.com/batoulapps/Adhan
+
+  <span dir=rtl></span>
+
+- https://github.com/meltuhamy/masjid-times
+
+  <span dir=ltr>Finally a prayer times app that works with your Mosque! Have you ever used a prayer times reminder application which calculates your prayer times using your location and some complex maths? The problem is, these prayer times might end up not matching your nearest Mosque...</span>
+
+- https://github.com/meltuhamy/belfastsalah
+
+  <span dir=ltr>This is an Ionic app that displays prayer times from a prayer times table. Prayer times directly from mosque prayer time table Realtime countdown to next prayer Notifications when it's time to pray! Automatically enable night mode during the night Clean, simple design. Under 5mb size!</span>
+
+- https://github.com/insha/salah
+
+  <span dir=ltr>Add the following to your Cargo.toml file under the [dependencies] section: [dependencies] salah = "0.5.0" To get prayer times, use the PrayerSchedule struct passing in coordinates, date, and calculation parameters. Coordinates Create a Coordinates struct with the latitude and longitude for the location you want prayer times for.</span>
+
+## أذكار
+
+- https://github.com/AbdelrahmanBayoumi/Azkar-App
+
+  <span dir=ltr>Desktop Application 💻 for: Calculating Muslim prayer times 🕌 Morning and Nights Azkar with reminder 🤲 With notification for random Azkar that pops-up in specific time 💬. برنامج لسطح المكتب 💻 يساعدك على: معرفة مواقيت الصلاة 🕌 قراءة أذكار الصباح و المساء مع التذكير بها 🤲 ظهور إشعارات بذكر او دعاء عشوائي كل فترة محددة 💬 Note Thanks for providing us open source license for the installers used in Azkar distribution.</span>
 
 ## منوعات
 
@@ -180,6 +222,10 @@ __ملاحظات:__
 
   <span dir=rtl></span>
 
+- https://github.com/AhmedElTabarani/DesignPatterns
+
+  <span dir=rtl>شرح الـ Design Patterns باللغة العربية.</span>
+
 # معالجة اللغات الطبيعية (مُ.لُ.طَ)
 
 - https://github.com/linuxscout/arabicnlptoolslist
@@ -238,7 +284,7 @@ __ملاحظات:__
 
   <span dir=ltr>Generating Arabic poems using Markov chains. Check out this YouTube video ( in Arabic) to see how I built this project. pip install pandas pip install pickle pip install markovify pip install tqdm This project is licensed under the MIT License - see the LICENSE.md file for details</span>
 
-## استخراج الكلم من الصور 🖼️
+## استخراج الكلم من الصور
 
 - https://github.com/Fahad-Alsaidi/raqin
 
@@ -268,7 +314,7 @@ __ملاحظات:__
 
   <span dir=ltr>Model uses Named Entity Recognition concept to tag words in arabic text. It consists of Bi-directional GRU units(One forward and the other is backward) and a CRF layer referenced from https://arxiv.org/pdf/1508.01991v1.pdf Model is trained on ANERCorp dataset. And uses FastText's Arabic vectors for word embedding. No.</span>
 
-## النص من وإلى الصوت 🔊
+## النص من وإلى الصوت
 
 - https://github.com/nawarhalabi/festival-tts-arabic-voices-docker
 
@@ -304,7 +350,11 @@ __ملاحظات:__
 
   <span dir=rtl>التصحيح الإملائي من أهم الأدوات المستعملة في النشر والكتابة الإلكترونية، وتستعمل في البحث والاستعلامات، كما يعد من أهم الأدوات المرافقة للبرامج المكتبية. وفي بعض الحالات نحتاج لما يسمى بالتصحيح التلقائي للكلمات، وهو اقتراح تصحيح لأخطاء شائعة في الكتابة، مثل قلب حرفين، أو عدم الضغط على زر ما لإعطاء كلمة خاطئة، وتشيع في الكتابة بالعربية بعض الأخطاء مثل عدم التفريق بين همزة الوصل وهمزة القطع، والخلط بين الضاد والظاء، وإغفال نقطتي الياء، وكتابة التاء المربوطة هاء.</span>
 
-## تَشْكِيلُ الكَلِمِ
+- https://github.com/sohaibafifi/languagetool-tools-ar
+
+  <span dir=ltr>Dev Tools for Arabic and LanguageTool Most tools are extracted from languagetool and slightly adapted to Arabic. 1 - download the languagetool-tools-ar-4.8-jar-with-dependencies.jar from releases 2 - download the latest arwiki-latest-pages-articles.xml.bz2 from http://dumps.wikimedia.org/arwiki/latest/. java -cp languagetool-tools-ar-4.8-jar-with-dependencies.jar org.languagetool.dev.tools.WikipediaSentenceExtractor arwiki-latest-pages-articles.xml arwiki-latest-pages-articles.txt java -cp languagetool-tools-ar-4.8-jar-with-dependencies.jar org.languagetool.dev.tools.TextIndexCreator index arwiki-latest-pages-articles.txt java -cp languagetool-tools-ar-4.8-jar-with-dependencies.jar org.languagetool.dev.tools.TextToNgram arwiki-latest-pages-articles.txt ngrams</span>
+
+## تشكيل الكلم
 
 - https://github.com/linuxscout/mishkal
 
