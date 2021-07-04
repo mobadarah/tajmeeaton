@@ -23,7 +23,11 @@ __ملاحظات:__
 
 - توجد أيضا قائمة مجمع بها مشاريع تخدم الغة العربية على هذا المستودع، [01walid/awesome-arabic](https://github.com/01walid/awesome-arabic)
 
-- لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، ومعظمها بَطُئ أو تَوقّف تطويره، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
+- وهنا قائمة بمشاريع ذات طابعي إسلامي: [https://github.com/choubari/Awesome-Muslims](https://github.com/choubari/Awesome-Muslims#web-apps)
+
+- 
+
+- لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، ومعظمها بَطُؤ أو تَوقّف تطويره، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
 
 - فليكن هدفك الوحيد رضا الله، ولذا أنصح برخصة "[وقف](https://ojuba.org/waqf-2.0:%D8%B1%D8%AE%D8%B5%D8%A9_%D9%88%D9%82%D9%81_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9)" بدلا من رخص مثل GPL وال MIT، وغيرهما. كما يمكن إنشاء رخصة بها شروط مختلفة منطلقة من نفس المبدأ لمشاريعك المستقبلية إن شاء الله
 
@@ -126,9 +130,17 @@ __ملاحظات:__
 
 ## صلاة
 
+- https://github.com/hayalasalah/adhan.py
+
+  <span dir=ltr>adhan.py is a Python 2.7 and 3+ library for computing adhan times.</span>
+
+- http://praytimes.org/
+
+  <span dir=ltr>Welcome to Pray Times, an Islamic project aimed at providing an open-source library for calculating Muslim prayers times. The first version of Pray Times was released in early 2007. The code is currently used in a wide range of Islamic websites and applications. Install our Firefox add-on for displaying daily prayer times.</span>
+
 - https://github.com/batoulapps/Adhan
 
-  <span dir=rtl></span>
+  <span dir=ltr>Adhan is a well tested and well documented library for calculating Islamic prayer times implemented in different languages and platforms. All astronomical calculations are high precision equations directly from the book "Astronomical Algorithms" by Jean Meeus. This book is recommended by the Astronomical Applications Department of the U.S.</span>
 
 - https://github.com/meltuhamy/masjid-times
 
@@ -142,6 +154,14 @@ __ملاحظات:__
 
   <span dir=ltr>Add the following to your Cargo.toml file under the [dependencies] section: [dependencies] salah = "0.5.0" To get prayer times, use the PrayerSchedule struct passing in coordinates, date, and calculation parameters. Coordinates Create a Coordinates struct with the latitude and longitude for the location you want prayer times for.</span>
 
+- https://github.com/AbdelrahmanBayoumi/Azkar-App
+
+  <span dir=ltr>Desktop Application 💻 for: Calculating Muslim prayer times 🕌 Morning and Nights Azkar with reminder 🤲 With notification for random Azkar that pops-up in specific time 💬. برنامج لسطح المكتب 💻 يساعدك على: معرفة مواقيت الصلاة 🕌 قراءة أذكار الصباح و المساء مع التذكير بها 🤲 ظهور إشعارات بذكر او دعاء عشوائي كل فترة محددة 💬 Note Thanks for providing us open source license for the installers used in Azkar distribution.</span>
+
+- https://github.com/Mosque-Screens/Mosque-Screen/?ref=producthunt
+
+  <span dir=ltr>Build in association with East London Mosque. The Mosque Screens project is a self funded project and does not have any financial income. As with all tech projects, there are costs which are incurred by the maintainers. These include: Servers, domains, databases etc. Please help by donating to the project via the following link.</span>
+
 ## أذكار
 
 - https://github.com/AbdelrahmanBayoumi/Azkar-App
@@ -153,6 +173,26 @@ __ملاحظات:__
 - https://github.com/challenge-azkar/tanafaso-frontend
 
   <span dir=ltr>A Flutter application for Muslims that help them challenge and motivate themselves and their friends to read Azkar in a fun way. On Play Store & On App Store There are a lot of ways you can contribute to this project.</span>
+
+- https://github.com/abougouffa/pyIslam
+
+  <span dir=ltr>is a python islamic library, it can calculates prayer times, qibla direction, convert between gregorian and hijri, calculate zakat and mirath. Actually, the library can does: Simply run: Note that the pip package name is islam and not pyIslam, pyIslam is taken by another project on PyPi.</span>
+
+- https://github.com/galacticwarrior9/IslamBot
+
+  <span dir=ltr>An Islamic bot for Discord with the following features: Qur'an, with support for 100+ translations. Tafsir, with 9 available in English and 37 in Arabic. Hadith in English and Arabic, from sunnah.com. Prayer times for any location in the world, with the ability to set reminders and change the calculation method.</span>
+
+- https://github.com/AhmedAshrafAZ/BoycottFrench
+
+  <span dir=ltr>An extension that helps Muslims boycott French products on E-commerce websites. This is an extension that acts as a look-up of the top French brands, whenever the user opens a page of French product, the extension will automatically warn the user so he/she can look for alternatives.</span>
+
+- https://github.com/choubari/Muslim-App
+
+  <span dir=ltr>The app is available only in Arabic but I'm planning to release an English version very soon. Prayer Times (of your current location) Morning&Evening Remembrance Remembrance Names of Allah Importance of Dhikr Tally Counter Qibla Direction Zakat Calculator Islamic Wallpapers Daily Notifications App Widget Light & Dark Themes and other features will be added on the next updates ...</span>
+
+- https://github.com/eneserdogan/iftar
+
+  <span dir=ltr>Iftar CLI allows a quick and easy prayer times in the command lin Install iftar from npm: $ [sudo] npm install -g iftar ✔ İftar'a 5 saat 31 dakika kaldı Iftar supports powerful, robust tabbed autocompletion by default, along with custom autocompletion on both commands and options.</span>
 
 # تعريب العلوم
 
@@ -217,6 +257,10 @@ __ملاحظات:__
   <span dir=ltr>Arabic - English word based dictionaries compilation - ejtaal/mr</span>
 
 # ترجمات
+
+- https://github.com/imAbdelhadi/coursera-subtitle-translation-arabic
+
+  <span dir=ltr>This repository is a fork of Coursera Subtitle Translatio, made by Tamshadow. قم بتشغيل الترجمة ثنائية اللغة باللغتين العربية والإنجليزية لمقاطع فيديو كورسيرا. إذا كانت الدورة تحتوي على ترجمة باللغتين العربية والإنجليزية، فافتحها مباشرة. إذا كانت الدورة التدريبية لا تحتوي على ترجمة عربية، فسيتم تلقائيًا ترجمة Subtitle إلى العربية.</span>
 
 - https://github.com/javascript-tutorial/ar.javascript.info
 
@@ -423,6 +467,10 @@ __ملاحظات:__
   <span dir=ltr>The tool is a Java open source to calculate readability for Arabic text with and without diacritics (Tashkeel). The tool works better with diacritics added in (we provide a method to calculate readability even with plain Arabic text, OSMAN will automatically estimate syllables and calculate readability even when no tashkeel is added in).</span>
 
 # تقنية - عام
+
+- https://github.com/aosus
+
+  <span dir=rtl>أسس مجتمع غير ربحي يهدف إلى نشر فكرة وثقافة البرمجيات الحرة والمفتوحة المصدر في الوطن العربي Python Apache-2.0 Updated 1 1 0 Jun 25, 2021 SCSS GPL-2.0 Updated 33 0 1 Jun 24, 2021 Discourse bridge to allow members to reply to new posts in telegram and matrix AGPL-3.0 0</span>
 
 - https://github.com/ojuba-org
 
