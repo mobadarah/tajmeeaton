@@ -62,9 +62,10 @@ __ملاحظات:__
 
 مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة، وإذا كنت تريد تنمية مهاراتك في مشاريع بسيطة والمشاريع المطلوبة تتطلب خبرة وجهدا، أو ليست في مجالك وأردت المساهمة، ساهم في تنمية المشاريع الموجودة بالفعل، ستجد الكثير قد مضى عليه فترة من الزمن، ويحتاج بعض التحديثات والتنمية.
 
-> سيتم الملئ إن شاء الله
-
-> قم بفتح issue وقدم اقتراحا
+هنا [مستودع KL14NT/AIUX](https://github.com/KL13NT/AIUX) تجد نقاشات عن مشاريع يتطلب وجودها، وما هو موجود هنا مشكلات واجهتني شخصيا في مشاريع تتعلق باللغة العربية، وبعضها من تفيكري وعصف الذهن، والآخر رأيت بعض الناس يريدونها أو يتناقشون عنها.
+1. كتابة الأرقام من اليمين لليسار، فمثلا 123 تُقرأ "ثلاثة وغشرين ومائة"، وكذلك نريد كتابتها من اليمين لليسار. أما السبب وراء هذا أنني عند المساهمة في لغة ألف بعمل محرر لها باستخدام CodeMirro@6 وأردت تعريب الأرقام السداسية العشرية، مثلا `0x123ab4`، كتابة `٠س١٢٣أب٤` أظن أنك لاحظت المشكلة هنا 😥. ويمكننا جعل هذه الطريقة في الكتابة خيارية في المحررات المعروفة، ليس لدي فكرة واضحة عن المكان الذي يجب تطوير هذه الخاصية فيه أو اللغة البرمجية المطلوبة، لكن عسى الله أن يوفق أحد لهذا.
+2. وبسبب وجود محاولات لإنشاء لغة عربية قادرة على التحدي والظهور، فلا بد من توافر خط، منضد، للنص العربي ليكون أحادي المسافة. يوجد محاولات جيدة مثل [خط كوكب](https://makkuk.com/kawkab-mono/)، لكن ليس كل الحروف لابد من تواجدها بنفس العرض، يمكنك الإطلاع على [هذه التويتة](https://twitter.com/KhaledGhetas/status/1416918281169121282) لخالد حسني.
+3. العمل 
 
 # خدمة الدين الإسلامي
 
@@ -93,6 +94,10 @@ __ملاحظات:__
 - https://github.com/hci-lab/PyQuran
 
   <span dir=ltr>PyQuran is a package which provides tools for Quranic Analysis and Arabic texts. It is still a small package which needs a lot of your effort. We believe that it is a seed of a fundamental general package for computations on Quran with Python, even at the most basic level which is simply retrieving Quran text.</span>
+
+- https://github.com/Alfanous-team/alfanous
+
+  <span dir=ltr>Alfanous is an Arabic search engine API provides the simple and advanced search in Quran , more features and many interfaces... - Alfanous-team/alfanous</span>
 
 - https://github.com/Crescent-Labs/iqra-web
 
@@ -249,6 +254,18 @@ __ملاحظات:__
 - https://github.com/SimplyAhmazing/noor
 
   <span dir=ltr>Noor is a simple, yet aHmazing arabic programming language. It it is currently in development mode and is being further defined and refined. It is implemented in Javascript. Noor comes with an IDE built to make it easy to write code in an arabic environment. Noor is still in development.</span>
+
+- https://arxiv.org/pdf/1907.05871.pdf
+
+  <span dir=rtl></span>
+
+- https://github.com/mobadarah/Ammoria
+
+  <span dir=rtl>لغة البرمجة عموريا.</span>
+
+- https://github.com/mobadarah/kalimat-lang
+
+  <span dir=rtl>لغة البرمجة "كلمات" العربية 📝. Contribute to mobadarah/kalimat-lang development by creating an account on GitHub.</span>
 
 # اللغة العربية
 
