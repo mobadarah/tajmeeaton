@@ -25,7 +25,7 @@ __ملاحظات:__
 
 - وهنا قائمة بمشاريع ذات طابعي إسلامي: [https://github.com/choubari/Awesome-Muslims](https://github.com/choubari/Awesome-Muslims#web-apps)
 
-- 
+- [وقائمة بالمدونات العربية](https://github.com/aissa-bouguern/arabic-programming-blogs) المختصة بالتقنية وعالم البرمجة
 
 - لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، ومعظمها بَطُؤ أو تَوقّف تطويره، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
 
@@ -54,6 +54,7 @@ __ملاحظات:__
   - [تصحيح الأخطاء ✅️](#تصحيح-الأخطاء-)
   - [تشكيل الكلم](#تشكيل-الكلم)
   - [ج ذ ر الكلمة](#ج-ذ-ر-الكلمة)
+  - [تصريف](#تصريف)
 - [خطوط (منصدات الخط)](#خطوط-منصدات-الخط)
 - [الوصولية (A11y)](#الوصولية-a11y)
 - [تقنية - عام](#تقنية---عام)
@@ -66,15 +67,17 @@ __ملاحظات:__
 
 مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة، وإذا كنت تريد تنمية مهاراتك في مشاريع بسيطة والمشاريع المطلوبة تتطلب خبرة وجهدا، أو ليست في مجالك وأردت المساهمة، ساهم في تنمية المشاريع الموجودة بالفعل، ستجد الكثير قد مضى عليه فترة من الزمن، ويحتاج بعض التحديثات والتنمية.
 
-هنا [مستودع KL14NT/AIUX](https://github.com/KL13NT/AIUX) تجد نقاشات عن مشاريع يتطلب وجودها، وما هو موجود هنا مشكلات واجهتني شخصيا في مشاريع تتعلق باللغة العربية، وبعضها من تفيكري وعصف الذهن، والآخر رأيت بعض الناس يريدونها أو يتناقشون عنها.
+> هنا على مدونة عرب آيز تجد [مجموعة من المشاريع](https://www.arabeyes.org/ArabeyesTodo) التي رأوا أن العربية بحاجة لها.
+
+> هنا [مستودع KL14NT/AIUX](https://github.com/KL13NT/AIUX) وتجد نقاشات عن مشاريع يتطلب وجودها، وما هو موجود هنا مشكلات واجهتني شخصيا في مشاريع تتعلق باللغة العربية، وبعضها من تفيكري وعصف الذهن، والآخر رأيت بعض الناس يريدونها أو يتناقشون عنها.
 
 ## الأرقام العربية من اليمين لليسار
 
-كتابة الأرقام من اليمين لليسار، فمثلا 123 تُقرأ "ثلاثة وعشرون ومائة"، وكذلك نريد كتابتها من اليمين لليسار. أما السبب وراء هذا أنني عند المساهمة في لغة ألف بعمل محرر لها باستخدام CodeMirro@6 وأردت تعريب الأرقام السداسية العشرية، مثلا `0x123ab4`، كتابة `٠س١٢٣أب٤` أظن أنك لاحظت المشكلة هنا 😥. ويمكننا جعل هذه الطريقة في الكتابة خيارية في المحررات المعروفة، ليس لدي فكرة واضحة عن المكان الذي يجب تطوير هذه الخاصية فيه أو اللغة البرمجية المطلوبة، لكن عسى الله أن يوفق أحدا لهذا. [اقرأ هذه التدوينة](www.urmawi.com/ramivitale/لماذا-نكتب-الأرقام-بالعربية-من-اليسار/)
+كتابة الأرقام من اليمين لليسار، فمثلا 123 تُقرأ "ثلاثة وعشرون ومائة"، وكذلك نريد كتابتها من اليمين لليسار. أما السبب وراء هذا أنني عند المساهمة في لغة ألف بعمل محرر لها باستخدام CodeMirro@6 وأردت تعريب الأرقام السداسية العشرية، مثلا `0x123ab4`، كتابة `٠س١٢٣أب٤` أظن أنك لاحظت المشكلة هنا 😥. ويمكننا جعل هذه الطريقة في الكتابة خيارية في المحررات المعروفة، ليس لدي فكرة واضحة عن المكان الذي يجب تطوير هذه الخاصية فيه أو اللغة البرمجية المطلوبة، لكن عسى الله أن يوفق أحدا لهذا. [اقرأ هذه التدوينة](http://www.urmawi.com/ramivitale/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%86%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%A3%D8%B1%D9%82%D8%A7%D9%85-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D9%8A%D8%B3%D8%A7%D8%B1/)
 
 ## خط (منضد) عربي أحادي المسافة
 
-وبسبب وجود محاولات لإنشاء لغة عربية قادرة على التحدي والظهور، فلا بد من توافر خط، منضد، للنص العربي ليكون أحادي المسافة. يوجد محاولات جيدة مثل [خط كوكب](https://makkuk.com/kawkab-mono/)، لكن ليس كل الحروف إلزاما أن يكون تواجدها بنفس العرض، يمكنك الإطلاع على [هذه التويتة](https://twitter.com/KhaledGhetas/status/1416918281169121282) لخالد حسني. تعرفت على خط Nimbus لاحقا وبه بعض تصوراتي لما يمكن أن يكون على الخط العربي أحادي المسافة.
+وبسبب وجود محاولات لإنشاء لغة عربية قادرة على التحدي والظهور، فلا بد من توافر خط، منضد، للنص العربي ليكون أحادي المسافة. يوجد محاولات جيدة مثل [خط كوكب](https://makkuk.com/kawkab-mono/)، لكن ليس كل الحروف إلزاما أن يكون تواجدها بنفس العرض، يمكنك الإطلاع على [هذه التويتة](https://twitter.com/KhaledGhetas/status/1416918281169121282) لخالد حسني... تعرفت على خط Nimbus لاحقا وبه بعض تصوراتي لما يمكن أن يكون على الخط العربي أحادي المسافة.
 
 ## مصيرات ومحررات المعادلات
 
@@ -82,7 +85,7 @@ __ملاحظات:__
 
 ## مشروع تعريب العلوم
 
-مشروع كبير بتعريب العلوم، هو كبير في أهدافه وطموحاته لكنه سهل في التنفيذ إن شاء الله. فكرت كما هي عادتي، أفكار متزاحمة، في عمل موقع يمكن أن أشبهه ب stackoverflow للتبسيط، حيث يمكن لأهل العلم في الاختصاص أن يعربوا المصطلحات بحيث يكون المصطلح من نابعا من مصدره وموثوقا، وأن يفتح باب طلب تعريب مصطلحات والسؤال والناقاشات والتصويت على التعريبات المقترحة، وبهذا جعلنا العلم جماعيا ووزعنا الجهود علينا، وأخرجنا مصلحات موثوقة قوية. وفقد قام الأخ وليد مسبقا بعمل [مشروع لتعريب المصطلحات الفرنسية](https://github.com/01walid/Nibras)، هو أقرب المشاريع لفكرتي حاليا (على حد علمي طبعا). من مزايا المشروع المبسط من الفكرة أنه __*"يسمح باقتراح مصطلحات جديدة"*__.
+مشروع كبير بتعريب العلوم، هو كبير في أهدافه وطموحاته لكنه سهل في التنفيذ إن شاء الله. فكرت كما هي عادتي، أفكار متزاحمة، في عمل موقع يمكن أن أشبهه ب stackoverflow للتبسيط، حيث يمكن لأهل العلم في الاختصاص أن يعربوا المصطلحات بحيث يكون المصطلح من نابعا من مصدره وموثوقا، وأن يفتح باب طلب تعريب مصطلحات والسؤال والناقاشات والتصويت على التعريبات المقترحة، وبهذا جعلنا العلم جماعيا ووزعنا الجهود علينا، وأخرجنا مصلحات موثوقة قوية. وفقد قام الأخ وليد مسبقا بعمل [مشروع لتعريب المصطلحات الفرنسية](https://github.com/01walid/Nibras)... اكتشفت مؤخرا موقع [عرب آيز](https://www.arabeyes.org/%D8%A7%D9%84%D9%82%D8%A7%D9%85%D9%88%D8%B3_%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A) الذي هو أقرب المشاريع لفكرتي حاليا (على حد علمي طبعا). من مزايا المشروع المبسط من الفكرة أنه __*"يسمح باقتراح مصطلحات جديدة والتصويت عليها والنقاش حولها"*__.
 
 # خدمة الدين الإسلامي
 
@@ -191,6 +194,10 @@ __ملاحظات:__
   <span dir=ltr>Desktop Application 💻 for: Calculating Muslim prayer times 🕌 Morning and Nights Azkar with reminder 🤲 With notification for random Azkar that pops-up in specific time 💬. برنامج لسطح المكتب 💻 يساعدك على: معرفة مواقيت الصلاة 🕌 قراءة أذكار الصباح و المساء مع التذكير بها 🤲 ظهور إشعارات بذكر او دعاء عشوائي كل فترة محددة 💬 Note Thanks for providing us open source license for the installers used in Azkar distribution.</span>
 
 ## منوعات
+
+- https://github.com/arabeyes-org/ITL
+
+  <span dir=ltr>The Islamic Tools and Libraries (ITL) project provides a fully featured library for performing common Islamic calculations. ITL is currently composed of two library-modules: prayertime: Geographically-aware prayer time and Qibla calculation routines. hijri: Hijri date generation/calculation and conversion routines.</span>
 
 - https://github.com/challenge-azkar/tanafaso-frontend
 
@@ -440,23 +447,27 @@ __ملاحظات:__
 
   <span dir=ltr>Dev Tools for Arabic and LanguageTool Most tools are extracted from languagetool and slightly adapted to Arabic. 1 - download the languagetool-tools-ar-4.8-jar-with-dependencies.jar from releases 2 - download the latest arwiki-latest-pages-articles.xml.bz2 from http://dumps.wikimedia.org/arwiki/latest/. java -cp languagetool-tools-ar-4.8-jar-with-dependencies.jar org.languagetool.dev.tools.WikipediaSentenceExtractor arwiki-latest-pages-articles.xml arwiki-latest-pages-articles.txt java -cp languagetool-tools-ar-4.8-jar-with-dependencies.jar org.languagetool.dev.tools.TextIndexCreator index arwiki-latest-pages-articles.txt java -cp languagetool-tools-ar-4.8-jar-with-dependencies.jar org.languagetool.dev.tools.TextToNgram arwiki-latest-pages-articles.txt ngrams</span>
 
+- https://gitlab.com/arabeyes-dev/duali
+
+  <span dir=ltr>GitLab.com</span>
+
 ## تشكيل الكلم
 
-- https://github.com/linuxscout/mishkal
+- https://github.com/AliOsm/shakkelha
 
-  <span dir=ltr>Mishkal Arabic text vocalization software مشكال لتشكيل النصوص العربية Developpers: Taha Zerrouki: http://tahadz.com taha dot zerrouki at gmail dot com You can Install Mishkal as library or Software Clone mishkal project from GitHub: git clone https://github.com/linuxscout/mishkal.git Install necessary packages: pip install -r miskal/requirements.txt requirments - pyarabic : basic arabic library</span>
-
-- https://github.com/Barqawiz/Shakkala
-
-  <span dir=ltr>Shakkala project use recurrent neural network for Arabic text vocalization to automatically form Arabic characters (تشكيل الحروف) which can be used to enhance text-to-speech systems. This model can be used in many applications such as enhance text-to-speech systems or search results. Execute following commands: cd requirements pip install -r requirements.txt Check full example in (demo.py) file.</span>
+  <span dir=ltr>This repository contains the models, dataset, helpers, and systems' comparison for our paper on Arabic Text Diacritization: " Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation", Ali Fadel, Ibraheem Tuffaha, Bara' Al-Jawarneh and Mahmoud Al-Ayyoub, EMNLP-IJCNLP 2019.</span>
 
 - https://github.com/AliOsm/arabic-text-diacritization
 
   <span dir=ltr>This repository contains the dataset, helpers, and systems comparison for our paper on Arabic Text Diacritization: " Arabic Text Diacritization Using Deep Neural Networks", Ali Fadel, Ibraheem Tuffaha, Bara' Al-Jawarneh, and Mahmoud Al-Ayyoub, ICCAIS 2019.</span>
 
-- https://github.com/AliOsm/shakkelha
+- https://github.com/Barqawiz/Shakkala
 
-  <span dir=ltr>This repository contains the models, dataset, helpers, and systems' comparison for our paper on Arabic Text Diacritization: " Neural Arabic Text Diacritization: State of the Art Results and a Novel Approach for Machine Translation", Ali Fadel, Ibraheem Tuffaha, Bara' Al-Jawarneh and Mahmoud Al-Ayyoub, EMNLP-IJCNLP 2019.</span>
+  <span dir=ltr>Shakkala project use recurrent neural network for Arabic text vocalization to automatically form Arabic characters (تشكيل الحروف) which can be used to enhance text-to-speech systems. This model can be used in many applications such as enhance text-to-speech systems or search results. Execute following commands: cd requirements pip install -r requirements.txt Check full example in (demo.py) file.</span>
+
+- https://github.com/linuxscout/mishkal
+
+  <span dir=ltr>Mishkal Arabic text vocalization software مشكال لتشكيل النصوص العربية Developpers: Taha Zerrouki: http://tahadz.com taha dot zerrouki at gmail dot com You can Install Mishkal as library or Software Clone mishkal project from GitHub: git clone https://github.com/linuxscout/mishkal.git Install necessary packages: pip install -r miskal/requirements.txt requirments - pyarabic : basic arabic library</span>
 
 ## ج ذ ر الكلمة
 
@@ -467,6 +478,12 @@ __ملاحظات:__
 - https://github.com/ejtaal/jsastem
 
   <span dir=ltr>This little project aims to create a simple arabic stemmer implemented in JavaScript. Good question. Because I need one for my other project, Mabhathu Tulab (A student's place of research) which is an Arabic - Arabic dictionary, similar to http://baheth.info but better of course ;) Its main feature is that the user may click on any word of a dictionary entry that may then be further explained by an overlay.</span>
+
+## تصريف
+
+- https://github.com/linuxscout/qutrub
+
+  <span dir=ltr>Qutrub: Arabic verb conjugation software قطرب: تصريف الأفعال العربية Developpers: Taha Zerrouki: http://tahadz.com taha dot zerrouki at gmail dot com pyarabic>=0.6.2 enable mod_python in Apache extract the qutrub package and run it from the web. The program don't need a database.</span>
 
 # خطوط (منصدات الخط)
 
@@ -489,6 +506,10 @@ __ملاحظات:__
 - https://github.com/aiaf/kawkab-mono
 
   <span dir=ltr>Kawkab Mono (كوكب مونو) is a monospaced Arabic typeface. It's designed for code and text-editing in particular, and whenever having a fixed-pitch font is necessary, such as when composing tabular data using text. There's a dearth in monospaced Arabic fonts and Kawkab comes to fill a void in this niche.</span>
+
+- https://gitlab.com/arabeyes-art/khotot
+
+  <span dir=ltr>GitLab.com</span>
 
 - https://github.com/aiaf/nimra
 
