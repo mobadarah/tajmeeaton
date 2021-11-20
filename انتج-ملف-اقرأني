@@ -2,15 +2,10 @@
 
 import re
 import os
-import sys
-import json
 import time
 import md_toc
-import requests
 from dotenv import dotenv_values
 from notion.client import NotionClient
-from notion.markdown import notion_to_markdown
-from datetime import datetime as dt, timedelta
 
 env = dotenv_values(".بيئة")
 NOTION_API_URL = "https://api.notion.com/v1"
@@ -18,11 +13,10 @@ NOTION_API_VERSION = "2021-05-13"
 NOTION_PAGE_ID = "3b693f2fe5ef4a08824aa7fd5fcd62fb"
 README_FILE = "README.md"
 CACHE_DIR = ".cache"
-notion_client=None
-page_block=None
+notion_client = None
+page_block = None
 
-readme_template = \
-"""<div dir=rtl>
+readme_template = """<div dir=rtl>
 
 ![غلاف](./غلاف.png)
 
@@ -32,7 +26,7 @@ readme_template = \
 
 
 if os.path.isfile(CACHE_DIR):
-    raise "file exists in the same place of cache dir: " + CACHE_DIR
+    raise Exception("file exists in the same place of cache dir: " + CACHE_DIR)
 if not os.path.isdir(CACHE_DIR):
     os.mkdir(CACHE_DIR)
 
@@ -40,16 +34,37 @@ if not os.path.isdir(CACHE_DIR):
 def get_markdown(block, indent="", indent_unit="  "):
     content = ""
     block_prefix = "\n\n" + indent
+
+    # collecting the bookmark info as it depends
+    # on some types of sibilings blocks
+    bookmark = {}
     numlist_counter = 0
-    last_child = None
-    last_child_type = None
+
     for child in block.children:
-        child_type = child.type # performance considerations
+        child_type = child.type  # performance considerations
+
+        if bookmark.get("link"):
+            if child_type == "quote":
+                bookmark["description"] = child.title
+                continue
+            first_is_latin = re.compile(r"^\s*[a-zA-Z]").search(bookmark["description"])
+            direction = "ltr" if first_is_latin else "rtl"
+            content += f"{block_prefix}- {bookmark['link']}"
+            content += f"{block_prefix}  <span dir={direction}>{bookmark['description']}</span>"
+            bookmark = {}
+            if child_type == "bulleted_list":
+                subcontent = get_markdown(child, indent=indent + indent_unit)
+                content += subcontent
+                continue
+
         if child_type == "numbered_list":
             numlist_counter += 1
             content += f"\n{numlist_counter}. " + child.title
             continue
+
+        # the next "numbered_list" will be a new list
         numlist_counter = 0
+
         if child_type == "text":
             content += block_prefix + "" + child.title
         elif child_type == "table_of_contents":
@@ -65,91 +80,49 @@ def get_markdown(block, indent="", indent_unit="  "):
         elif child_type == "column_list":
             content += ""
         elif child_type == "bulleted_list":
-            if last_child_type == "bookmark":
-                content += get_markdown(child, indent=indent+indent_unit)
-            else:
-                content += block_prefix + "- " + child.title
+            content += block_prefix + "- " + child.title
         elif child_type == "quote":
             content += block_prefix + "> " + child.title
         elif child_type == "bookmark":
-            remove_pattern = re.compile(r"\s*Contribute to (\w+/\w+) development by creating an account on GitHub\.")
+            remove_pattern = re.compile(
+                r"\s*Contribute to .*? development by creating an account on GitHub\."
+            )
             desc = remove_pattern.sub("", child.description)
-            first_is_latin = re.compile(r"^\s*[a-zA-Z]").search(desc)
-            direction = "ltr" if first_is_latin else "rtl"
-            content += f"{block_prefix}- {child.link}{block_prefix}  <span dir={direction}>{desc}</span>"
-        
-        last_child = child
-        last_child_type = child_type
+            bookmark["link"] = child.link
+            bookmark["description"] = desc
+
+    if bookmark.get("link"):
+        first_is_latin = re.compile(r"^\s*[a-zA-Z]").search(bookmark["description"])
+        direction = "ltr" if first_is_latin else "rtl"
+        content += f"{block_prefix}- {bookmark['link']}"
+        content += (
+            f"{block_prefix}  <span dir={direction}>{bookmark['description']}</span>"
+        )
 
     return content
 
 
-def get_page_data(notionpy=False):
-    if notionpy:
-        start_time = time.time()
-        print("📑 احضار البيانات بواسطة مكتبة notionpy")
-        # page_data = get_page_data_notion_api()
-        page_data = get_page_data_notionpy()
-        end_time = time.time()
-        print("✅️ تم إحضار البيانات خلال: ",
-              "{:2.2}".format(end_time - start_time), "ث")
-        return page_data
-
-    cache_file = f"{CACHE_DIR}/page_data.json"
-    timestamp_file = f"{cache_file}.timestamp"
-    is_force_update = "--أجبر" in sys.argv
-    if not is_force_update and os.path.exists(cache_file) and os.path.exists(timestamp_file):
-        timestap = open(timestamp_file, "r")
-        if dt.now() - dt.strptime(timestap.read(), "%c") < timedelta(minutes=5):
-            print("📑 احضار البيانات من ملف المخزن المؤقت")
-            timestap.close()
-            f = open(f"{cache_file}", "r")
-            page_data = json.loads(f.read())
-            f.close()
-            return page_data
-        timestap.close()
-
+def get_page_data():
     start_time = time.time()
-    print("📑 إحضار البيانات من الخادوم الخاص بنوشن")
-    page_data = get_page_data_notion_api()
+    print("📑 جاري احضار البيانات بواسطة مكتبة notionpy...")
+    page_data = get_page_data_notionpy()
     end_time = time.time()
-    print("✅️ تم إحضار البيانات خلال: ",
-          "{:2.2}".format(end_time - start_time), "ث")
-
-    with open(cache_file, "w") as f:
-        f.write(json.dumps(page_data))
-    with open(timestamp_file, "w") as f:
-        f.write(dt.now().strftime("%c"))
+    print("✅️ أُحضرت البيانات خلال: ", "{:2.2}".format(end_time - start_time), "ث")
 
     return page_data
 
 
-def get_page_data_notion_api():
-    req_data = \
-        requests.get(f"{NOTION_API_URL}/blocks/{NOTION_PAGE_ID}/children", headers={
-            "Authorization": f"Bearer {env['NOTION_TOKEN']}",
-            "Notion-Version": NOTION_API_VERSION})
-    return req_data.json()
-
-
 def get_page_data_notionpy():
     global notion_client, page_bock
-    notion_client = notion_client or NotionClient(token_v2=env['NOTION_COOKIE_TOKEN_V2'])
+    notion_client = notion_client or NotionClient(
+        token_v2=env["NOTION_COOKIE_TOKEN_V2"]
+    )
     page_block = notion_client.get_block(NOTION_PAGE_ID)
     return page_block
 
 
-def generate_pdf_file():
-    global notion_client
-    file_name = "تجميعة.pdf"
-    notion_client = notion_client or NotionClient(token_v2=env['NOTION_COOKIE_TOKEN_V2'])
-    # request.get(download_url).content
-    notion_client.download_block(block_id=NOTION_PAGE_ID, export_type="pdf")
-    print("📂 تم توليد ملف ", file_name)
-
-
 if __name__ == "__main__":
-    page_data = get_page_data(notionpy=True)
+    page_data = get_page_data()
     page_md = get_markdown(page_data)
     readme_content = readme_template.format(المحتوى=page_md)
 
@@ -164,7 +137,3 @@ if __name__ == "__main__":
 
     with open(README_FILE, "w") as f:
         f.write(readme_content)
-
-    if "--بدإ" in sys.argv or "--pdf" in sys.argv:
-        generate_pdf_file()
-        
