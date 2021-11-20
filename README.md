@@ -7,23 +7,27 @@
 
 مستودع يحتوي على مجموعة من المشاريع (وليس حصرا لجميعها) للنهوض بالأمة، وبشكل رئيسي تلك المشاريع مفتوحة المصدر مثل لغات بالبرمجة ومعالجة اللغات الطبيعية م.ل.ط (ذكاء إصطناعي)، بالإضافة لمشاريع متعلقة بالدين الإسلامي مثل تطبيقات القرآن والأذكار والأذان وغيرها.
 
-اكمل التصفح هنا إذا كنت تريد أن ترى المجهود الذي يبذل، اكمل التصفح إذا كنت تريد أن تساهم معنا في نهضة حقيقية، يوجد أيضا مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة.
+اكمل التصفح هنا إذا كنت تريد أن ترى المجهود المبذول، اكمل التصفح إذا كنت تريد أن تساهم معنا في نهضة حقيقية، يوجد أيضا مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة.
 
 __كيفية المساهمة:__
 
-يمكنك المساهمة بتوضيح خطأ لغوي أو اقتراح تحسينات أو إضافة أعمال ومشاريع أخرى تخدم الأمة الإسلامية، يمكنك فتح issue أو المشاركة في [النقاشات](https://github.com/MuhammadSawalhy/tajmeeaton/discussions/2).
+يمكنك المساهمة بتوضيح خطأ لغوي أو اقتراح تحسينات أو إضافة أعمال ومشاريع أخرى تخدم الأمة، يمكنك فتح issue أو المشاركة في [النقاشات](https://github.com/MuhammadSawalhy/tajmeeaton/discussions/2).
 
 __ملاحظات:__
 
-- ستجد أنه معظم الوصف هنا بالإنجليزية لأن الوصف مأخوذ كما هو من المشاريع عن طريق الكود في [.\انتج-ملف-اقرأني](https://github.com/MuhammadSawalhy/tajmeeaton/blob/main/انتج-ملف-اقرأني)، وهذا مما أأسف له، من واقعنا الذي أسعى لتغييره، والله من وراء القصد
+- ستجد أن معظم الوصف هنا بالإنجليزية لأن الوصف مأخوذ كما هو من المشاريع عن طريق الكود في [.\انتج-ملف-اقرأني](https://github.com/MuhammadSawalhy/tajmeeaton/blob/main/انتج-ملف-اقرأني)، وهذا مما آسَف له، من واقعنا الذي أسعى لتغييره، والله الموفق والمعين
 
 - التجميعة على موقع نوشن: [https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb](https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb)
 
 - هنا أيضا [مستودع KL14NT/AIUX](https://github.com/KL13NT/AIUX) يهدف لتحسين تواجد اللغة العربية وتحسين تجربة المستخدم مع اللغة
 
-- توجد أيضا قائمة مجمع بها مشاريع تخدم الغة العربية على هذا المستودع، [01walid/awesome-arabic](https://github.com/01walid/awesome-arabic)
+- توجد أيضا تجميعة بها مشاريع تخدم الغة العربية على هذا المستودع، [01walid/awesome-arabic](https://github.com/01walid/awesome-arabic)
 
-- وهنا قائمة بمشاريع ذات طابعي إسلامي: [https://github.com/choubari/Awesome-Muslims](https://github.com/choubari/Awesome-Muslims#web-apps)
+- وهنا تجميعة بمشاريع في خدمى الإسلام: [https://github.com/AhmedKamal/awesome-Islam](https://github.com/AhmedKamal/awesome-Islam)
+
+- وهنا أيضا: [https://github.com/choubari/Awesome-Muslims](https://github.com/choubari/Awesome-Muslims#web-apps)
+
+- وتجميعة بصناعي محتوى تقني عربي: [https://github.com/abdumostafa/awesome-in-arabic](https://github.com/abdumostafa/awesome-in-arabic)
 
 - [وقائمة بالمدونات العربية](https://github.com/aissa-bouguern/arabic-programming-blogs) المختصة بالتقنية وعالم البرمجة
 
@@ -38,7 +42,7 @@ __ملاحظات:__
   - [تعريب المطلحات العلمية](#تعريب-المطلحات-العلمية)
   - [تعليم اللغة العربية](#تعليم-اللغة-العربية)
   - [الأرقام العربية من اليمين لليسار](#الأرقام-العربية-من-اليمين-لليسار)
-  - [خط (منضد) عربي أحادي المسافة](#خط-منضد-عربي-أحادي-المسافة)
+- [خط (منضد) عربي أحادي المسافة](#خط-منضد-عربي-أحادي-المسافة)
 - [في خدمة الإسلام](#في-خدمة-الإسلام)
   - [قرآن](#قرآن)
   - [حديث](#حديث)
@@ -57,6 +61,8 @@ __ملاحظات:__
   - [تشكيل الكلم](#تشكيل-الكلم)
   - [ج ذ ر الكلمة](#ج-ذ-ر-الكلمة)
   - [تصريف](#تصريف)
+  - [الشعر - انتاج شعر](#الشعر---انتاج-شعر)
+  - [الشعر - التعرف على بحر البيت](#الشعر---التعرف-على-بحر-البيت)
 - [خطوط (منصدات الخط)](#خطوط-منصدات-الخط)
 - [الوصولية (A11y)](#الوصولية-a11y)
 - [تقنية - عام](#تقنية---عام)
@@ -75,7 +81,7 @@ __ملاحظات:__
 
 ## مصيرات ومحررات المعادلات
 
-محررات ومصيرات معادلات الرياضيات مثل [Katex](https://github.com/KaTeX/KaTeX) و [Mathquill](https://github.com/mathquill/mathquill)
+محررات ومصيرات معادلات الرياضيات مثل [Katex](https://github.com/KaTeX/KaTeX)، [Mathquill](https://github.com/mathquill/mathquill)، و[Manim](https://github.com/3b1b/manim).
 
 ## تعريب المطلحات العلمية
 
@@ -89,7 +95,7 @@ __ملاحظات:__
 
 كتابة الأرقام من اليمين لليسار، فمثلا 123 تُقرأ "ثلاثة وعشرون ومائة"، وكذلك نريد كتابتها من اليمين لليسار. أما السبب وراء هذا أنني عند المساهمة في لغة ألف بعمل محرر لها باستخدام CodeMirro@6 وأردت تعريب الأرقام السداسية العشرية، مثلا `0x123ab4`، كتابة `٠س١٢٣أب٤` أظن أنك لاحظت المشكلة هنا 😥. ويمكننا جعل هذه الطريقة في الكتابة خيارية في المحررات المعروفة، ليس لدي فكرة واضحة عن المكان الذي يجب تطوير هذه الخاصية فيه أو اللغة البرمجية المطلوبة، لكن عسى الله أن يوفق أحدا لهذا. [اقرأ هذه التدوينة](http://www.urmawi.com/ramivitale/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%86%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%A3%D8%B1%D9%82%D8%A7%D9%85-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D9%8A%D8%B3%D8%A7%D8%B1/)
 
-## خط (منضد) عربي أحادي المسافة
+# خط (منضد) عربي أحادي المسافة
 
 وبسبب وجود محاولات لإنشاء لغة عربية قادرة على التحدي والظهور، فلا بد من توافر خط، منضد، للنص العربي ليكون أحادي المسافة. يوجد محاولات جيدة مثل [خط كوكب](https://makkuk.com/kawkab-mono/)، لكن ليس كل الحروف إلزاما أن يكون تواجدها بنفس العرض، يمكنك الإطلاع على [هذه التويتة](https://twitter.com/KhaledGhetas/status/1416918281169121282) لخالد حسني... تعرفت على خط Nimbus لاحقا وبه بعض تصوراتي لما يمكن أن يكون على الخط العربي أحادي المسافة.
 
@@ -152,6 +158,18 @@ __ملاحظات:__
 - https://github.com/Yassine-Lafryhi/Ayaaty
 
   <span dir=ltr>A JAVA desktop application to listen to quran, show quranic supplications and Dhikr Install the fonts, which are located in /fonts/ Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</span>
+
+- https://github.com/cpfair/quran-tajweed
+
+  <span dir=ltr>Tajweed annotations for the Qur'an (riwayat hafs). The data is available as a JSON file with exact character indices for each rule, and as individual decision trees for each rule. You can use this data to display the Qur'an with tajweed highlighting, refine models for Qur'anic speech recognition, or - if you enjoy decision trees - improve your own recitation.</span>
+
+- https://github.com/Mohamed-Nagdy/Quran-App-Data
+
+  <span dir=rtl>كل كتب وصور تطبيقات القرآن. Contribute to Mohamed-Nagdy/Quran-App-Data development by creating an account on GitHub.</span>
+
+- https://github.com/bilalbentoumi/qurandatabase
+
+  <span dir=ltr>Database for Holy Quran.</span>
 
 ## حديث
 
@@ -242,6 +260,14 @@ __ملاحظات:__
 - https://github.com/OmarIthawi/arabic-mathjax
 
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
+
+- https://khatt.org/
+
+  <span dir=rtl>خط سين: نظام تنضيد (كتابة) الرياضيات بالعربية Khatt.Seen: Arabic Mathematical Notation Typesetting System أدخل أوامر هنا: الصور الناتجة عن نظام خط.س مرخصة تحت الملكية العامة. Images rendered by Khatt.Seen are under public domain license.</span>
+
+- http://www.arabterm.org/
+
+  <span dir=rtl></span>
 
 - https://github.com/aosus/arabic-tech-dictionary/
 
@@ -385,10 +411,6 @@ __ملاحظات:__
 
   <span dir=ltr>This repo contains Arabic OCR App. The APP can be used to extract the Arabic text from the images. This was built based on the EasyOCR library. EsayOCR built detection/recognition model to detect and recognize the characters and words. For detection part they used the pretrained model for CRAFT algorithm.</span>
 
-- https://github.com/hayderkharrufa/arabic_poem_generator
-
-  <span dir=ltr>Generating Arabic poems using Markov chains. Check out this YouTube video ( in Arabic) to see how I built this project. pip install pandas pip install pickle pip install markovify pip install tqdm This project is licensed under the MIT License - see the LICENSE.md file for details</span>
-
 ## استخراج الكلم من الصور
 
 - https://github.com/Fahad-Alsaidi/raqin
@@ -497,9 +519,25 @@ __ملاحظات:__
 
 ## تصريف
 
+- https://github.com/alsaydi/sarf
+
+  <span dir=ltr>I found the source code posted on sourceforge here https://sourceforge.net/projects/sarf/files/sarf/sarf%201.0/. The code is also hosted by others. Here is an example: https://raw.githubusercontent.com/linuxscout/sarf. The original Sarf code contains a tremendous effort and handles numerous cases. Also, it has invaluable documentation Documentations I wanted to keep the Sarf program available for others who may find it useful for their purposes.</span>
+
 - https://github.com/linuxscout/qutrub
 
   <span dir=ltr>Qutrub: Arabic verb conjugation software قطرب: تصريف الأفعال العربية Developpers: Taha Zerrouki: http://tahadz.com taha dot zerrouki at gmail dot com pyarabic>=0.6.2 enable mod_python in Apache extract the qutrub package and run it from the web. The program don't need a database.</span>
+
+## الشعر - انتاج شعر
+
+- https://github.com/hayderkharrufa/arabic_poem_generator
+
+  <span dir=ltr>Generating Arabic poems using Markov chains. Check out this YouTube video ( in Arabic) to see how I built this project. pip install pandas pip install pickle pip install markovify pip install tqdm This project is licensed under the MIT License - see the LICENSE.md file for details</span>
+
+## الشعر - التعرف على بحر البيت
+
+- https://khalil21-e4a9f.web.app/
+
+  <span dir=rtl></span>
 
 # خطوط (منصدات الخط)
 
