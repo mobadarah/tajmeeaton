@@ -19,24 +19,13 @@ __ملاحظات:__
 
 - التجميعة على موقع نوشن: [https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb](https://www.notion.so/scicave/3b693f2fe5ef4a08824aa7fd5fcd62fb)
 
-- هنا أيضا [مستودع KL14NT/AIUX](https://github.com/KL13NT/AIUX) يهدف لتحسين تواجد اللغة العربية وتحسين تجربة المستخدم مع اللغة
-
-- توجد أيضا تجميعة بها مشاريع تخدم الغة العربية على هذا المستودع، [01walid/awesome-arabic](https://github.com/01walid/awesome-arabic)
-
-- وهنا تجميعة بمشاريع في خدمى الإسلام: [https://github.com/AhmedKamal/awesome-Islam](https://github.com/AhmedKamal/awesome-Islam)
-
-- وهنا أيضا: [https://github.com/choubari/Awesome-Muslims](https://github.com/choubari/Awesome-Muslims#web-apps)
-
-- وتجميعة بصناعي محتوى تقني عربي: [https://github.com/abdumostafa/awesome-in-arabic](https://github.com/abdumostafa/awesome-in-arabic)
-
-- [وقائمة بالمدونات العربية](https://github.com/aissa-bouguern/arabic-programming-blogs) المختصة بالتقنية وعالم البرمجة
-
 - لا بد أن نعي أن معظم هذه المشروعات تعتبر جهود فردية أو فريق بسيط له شؤون حياته الخاصة وتعلمه وعمله، ومعظمها بَطُؤ أو تَوقّف تطويره، فلا بد أن نتحمل مسؤولية دعم هذه المشروعات ودفعها للأمام، سواء أكان دعما ماديا أو مساهمة في التطوير
 
 - فليكن هدفك الوحيد رضا الله، ولذا أنصح برخصة "[وقف](https://ojuba.org/waqf-2.0:%D8%B1%D8%AE%D8%B5%D8%A9_%D9%88%D9%82%D9%81_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9)" بدلا من رخص مثل GPL وال MIT، وغيرهما. كما يمكن إنشاء رخصة بها شروط مختلفة منطلقة من نفس المبدأ لمشاريعك المستقبلية إن شاء الله
 
 ---
 
+- [تجميعات وقوائم رائعة](#تجميعات-وقوائم-رائعة)
 - [مشاريع مطلوب توجدها](#مشاريع-مطلوب-توجدها)
   - [مصيرات ومحررات المعادلات](#مصيرات-ومحررات-المعادلات)
   - [تعريب المطلحات العلمية](#تعريب-المطلحات-العلمية)
@@ -71,6 +60,32 @@ __ملاحظات:__
 
 
 ---
+
+# تجميعات وقوائم رائعة
+
+- https://github.com/01walid/awesome-arabic
+
+  <span dir=ltr>A curated list of awesome projects and dev/design resources for supporting Arabic computational needs. - GitHub - 01walid/awesome-arabic: A curated list of awesome projects and dev/design resources for supporting Arabic computational needs.</span>
+
+- https://github.com/AhmedKamal/awesome-Islam
+
+  <span dir=ltr>A curated list of awesome islam related projects, frameworks, resources and other awesomeness. support existing projects by helping people who want to contribute find them easily. help developers find the best resources that help them while developing new islamic apps being aware of the current repos and apps and the gaps in different platforms. help users in different platforms find the best islamic apps that can help them in their life.</span>
+
+- https://github.com/choubari/Awesome-Muslims
+
+  <span dir=ltr>A List of Awesome Muslim Things. Muslim App: Daily Muslim Android App that contains Prayer times, Rememberance, Qibla Finder, Zakat Calculator and other features. Quran: a quran reading application for android Wazaker: An islamic app to know about islam, morning and evening azkar, qibla direction, counter.</span>
+
+- https://github.com/abdumostafa/awesome-in-arabic
+
+  <span dir=ltr>A collection of awesome developer accounts (Twitter, Facebook,...) 👨‍💻 that enrich Arabic content, podcasts, articles, Youtube channels and Some advises and guidelines. - GitHub - abdumostafa/awesome-in-arabic: A collection of awesome developer accounts (Twitter, Facebook,...) 👨‍💻 that enrich Arabic content, podcasts, articles, Youtube channels and Some advises and guidelines.</span>
+
+- https://github.com/aissa-bouguern/arabic-programming-blogs
+
+  <span dir=rtl>أهم المدونات والمصادر العربية لتعلم البرمجة وتطوير الويب - GitHub - aissa-bouguern/arabic-programming-blogs: أهم المدونات والمصادر العربية لتعلم البرمجة وتطوير الويب</span>
+
+- https://github.com/linuxscout/arabicnlptoolslist
+
+  <span dir=ltr>Arabic NLP tools List inventory QalsadiQalsadi Qalsadi: Arabic mophological analyzer Library for python. Buckwalter Arabic Morphological Analyzer (BAMA BAMA) Standard Arabic Morphological Analyzer (SAMA SAMA, version 3.0 of BAMA) ElixirFM ElixirFM : Functional Arabic Morphology Xerox Arabic Morphological Analysis and Generation (Deprecated) NMSU NMSU's Arabic Morphological Analyzer - MAGEAD: Morphological Analysis and Generation for Arabic and its Dialects ~~- Almorgeana : Arabic Lexeme-based Morphological Generation and Analysis is distributed as part of the MADA system.</span>
 
 # مشاريع مطلوب توجدها
 
