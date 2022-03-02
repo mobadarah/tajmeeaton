@@ -7,14 +7,17 @@ from tqdm import tqdm
 from dotenv import dotenv_values
 from notion.client import NotionClient
 
-env = dotenv_values(".بيئة")
-NOTION_API_URL = "https://api.notion.com/v1"
+# fmt: off
+__dirname__        = os.path.dirname(__file__)
+env                = dotenv_values(os.path.join(__dirname__, ".بيئة"))
+README_FILE        = os.path.join(__dirname__, "README.md")
+CACHE_DIR          = os.path.join(__dirname__, ".cache")
 NOTION_API_VERSION = "2021-05-13"
-NOTION_PAGE_ID = "3f677c2054ee49efad36e321cd88e1ac"
-README_FILE = "README.md"
-CACHE_DIR = ".cache"
-notion_client = None
-page_block = None
+NOTION_API_URL     = "https://api.notion.com/v1"
+NOTION_PAGE_ID     = "3f677c2054ee49efad36e321cd88e1ac"
+notion_client      = None
+page_block         = None
+# fmt: on
 
 readme_template = """<div dir=rtl>
 
@@ -47,7 +50,8 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
             if child_type == "quote":
                 bookmark["description"] = child.title
                 continue
-            first_is_latin = re.compile(r"^\s*[a-zA-Z]").search(bookmark["description"])
+            first_is_latin = re.compile(
+                r"^\s*[a-zA-Z]").search(bookmark["description"])
             direction = "ltr" if first_is_latin else "rtl"
             content += f"{block_prefix}- {bookmark['link']}"
             content += f"{block_prefix}  <span dir={direction}>{bookmark['description']}</span>"
@@ -92,7 +96,8 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
             bookmark["description"] = desc
 
     if bookmark.get("link"):
-        first_is_latin = re.compile(r"^\s*[a-zA-Z]").search(bookmark["description"])
+        first_is_latin = re.compile(
+            r"^\s*[a-zA-Z]").search(bookmark["description"])
         direction = "ltr" if first_is_latin else "rtl"
         content += f"{block_prefix}- {bookmark['link']}"
         content += (
@@ -107,7 +112,8 @@ def get_page_data():
     print("📑 جاري احضار البيانات بواسطة مكتبة notionpy...")
     page_data = get_page_data_notionpy()
     end_time = time.time()
-    print("✅️ أُحضرت البيانات خلال: ", "{:2.2}".format(end_time - start_time), "ث")
+    print("✅️ أُحضرت البيانات خلال: ",
+          "{:2.2}".format(end_time - start_time), "ث")
 
     return page_data
 
@@ -129,4 +135,5 @@ if __name__ == "__main__":
     with open(README_FILE, "w") as f:
         f.write(readme_content)
 
-    os.system(f"mdtoc '{os.path.dirname(__file__)}/README.md'")
+    mdtoc_path = os.path.join(__dirname__, "env/bin/mdtoc")
+    os.system(f"{mdtoc_path} '{README_FILE}'")
