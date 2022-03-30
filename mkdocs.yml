@@ -1,0 +1,35 @@
+site_name: تَجميعةٌ
+theme:
+  name: material
+  language: ar
+  palette: 
+    scheme: default
+    primary: black
+    accent: grey
+  font:
+    text: Roboto
+  features:
+    - navigation.tracking
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/github
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<email-address>
+
+markdown_extensions:
+  # - def_list
+  - meta
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.betterem
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
