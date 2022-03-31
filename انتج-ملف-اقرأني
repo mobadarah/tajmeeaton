@@ -62,16 +62,8 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
         child = consume_child()
         child_type = child.type  # performance considerations
 
-        if child_type == "numbered_list":
-            numlist_counter += 1
-            if prev_child and prev_child.type == "numbered_list":
-                content += f"\n{indent}{numlist_counter}. " + child.title
-            else:
-                content += f"{block_prefix}{numlist_counter}. " + child.title
-            continue
-
-        # the next "numbered_list" will be a new list
-        numlist_counter = 0
+        if child_type != "numbered_list":
+            numlist_counter = 0
 
         if child_type == "text":
             content += block_prefix + "" + child.title
@@ -86,11 +78,17 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
         elif child_type == "sub_sub_header":
             content += block_prefix + "### " + child.title
         elif child_type == "column_list":
-            content += ""
-        elif child_type == "bulleted_list":
-            content += block_prefix + "- " + child.title
+            content += "" # TODO: use table in markdown
         elif child_type == "quote":
             content += block_prefix + "> " + child.title
+        elif child_type == "bulleted_list":
+            content += block_prefix + "- " + child.title
+        elif child_type == "numbered_list":
+            numlist_counter += 1
+            item_prefix = block_prefix
+            if numlist_counter > 1:
+                item_prefix = f"\n{indent}"
+            content += f"{item_prefix}{numlist_counter}. " + child.title
         elif child_type == "bookmark":
             # remove "Contribute to <repo> development..."
             desc = re.sub(
@@ -115,6 +113,12 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
                     next_child, indent=indent + indent_unit)
                 content += subcontent
                 consume_child()
+
+        if child.children:
+            subcontent = get_markdown(child, indent=indent + indent_unit)
+            if child_type == "numbered_list":
+                subcontent = subcontent[1:] # remove the one of the two "\n"
+            content += subcontent
 
     return content
 
