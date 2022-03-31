@@ -38,32 +38,36 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
     content = ""
     block_prefix = "\n\n" + indent
 
-    # collecting the bookmark info as it depends
-    # on some types of sibilings blocks
-    bookmark = {}
     numlist_counter = 0
+    current_child = None
+    prev_child = None
+    next_child = None
+    current_child_index = 0
+    progress_len = len(block.children)
+    progress = tqdm(total=progress_len) if root else None
 
-    for child in tqdm(block.children) if root else block.children:
+    def consume_child():
+        nonlocal current_child_index, current_child, next_child, prev_child
+        if current_child_index > 0:
+            prev_child = block.children[current_child_index - 1]
+        if current_child_index < len(block.children) - 1:
+            next_child = block.children[current_child_index + 1]
+        current_child = block.children[current_child_index]
+        current_child_index += 1
+        if progress:
+            progress.update(current_child_index + 1)
+        return current_child
+
+    while current_child_index < progress_len:
+        child = consume_child()
         child_type = child.type  # performance considerations
-
-        if bookmark.get("link"):
-            if child_type == "quote":
-                bookmark["description"] = child.title
-                continue
-            first_is_latin = re.compile(
-                r"^\s*[a-zA-Z]").search(bookmark["description"])
-            direction = "ltr" if first_is_latin else "rtl"
-            content += f"{block_prefix}- {bookmark['link']}"
-            content += f"{block_prefix}  <span dir={direction}>{bookmark['description']}</span>"
-            bookmark = {}
-            if child_type == "bulleted_list":
-                subcontent = get_markdown(child, indent=indent + indent_unit)
-                content += subcontent
-                continue
 
         if child_type == "numbered_list":
             numlist_counter += 1
-            content += f"\n{numlist_counter}. " + child.title
+            if prev_child and prev_child.type == "numbered_list":
+                content += f"\n{indent}{numlist_counter}. " + child.title
+            else:
+                content += f"{block_prefix}{numlist_counter}. " + child.title
             continue
 
         # the next "numbered_list" will be a new list
@@ -88,21 +92,29 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
         elif child_type == "quote":
             content += block_prefix + "> " + child.title
         elif child_type == "bookmark":
-            remove_pattern = re.compile(
-                r"\s*Contribute to .*? development by creating an account on GitHub\."
-            )
-            desc = remove_pattern.sub("", child.description)
+            # remove "Contribute to <repo> development..."
+            desc = re.sub(
+                r"\s*Contribute to .*? development by creating an account on GitHub\.", "", child.description)
+            bookmark = {}
             bookmark["link"] = child.link
             bookmark["description"] = desc
+            first_is_latin = re.search(
+                r"^\s*[a-zA-Z]", bookmark["description"])
+            direction = "ltr" if first_is_latin else "rtl"
 
-    if bookmark.get("link"):
-        first_is_latin = re.compile(
-            r"^\s*[a-zA-Z]").search(bookmark["description"])
-        direction = "ltr" if first_is_latin else "rtl"
-        content += f"{block_prefix}- {bookmark['link']}"
-        content += (
-            f"{block_prefix}  <span dir={direction}>{bookmark['description']}</span>"
-        )
+            if next_child and next_child.type == "quote":
+                bookmark["description"] = next_child.title
+                consume_child()
+
+            content += f"{block_prefix}- {bookmark['link']}"
+            if bookmark['description']:
+                content += f"{block_prefix}  <span dir={direction}>{bookmark['description']}</span>"
+
+            if next_child and next_child.type == "bulleted_list":
+                subcontent = get_markdown(
+                    next_child, indent=indent + indent_unit)
+                content += subcontent
+                consume_child()
 
     return content
 
