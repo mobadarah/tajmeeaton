@@ -3,6 +3,7 @@
 import re
 import os
 import time
+import math
 from tqdm import tqdm
 from dotenv import dotenv_values
 from notion.client import NotionClient
@@ -78,7 +79,7 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
         elif child_type == "sub_sub_header":
             content += block_prefix + "### " + child.title
         elif child_type == "column_list":
-            content += "" # TODO: use table in markdown
+            content += ""  # TODO: use table in markdown
         elif child_type == "quote":
             content += block_prefix + "> " + child.title
         elif child_type == "bulleted_list":
@@ -115,9 +116,12 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
                 consume_child()
 
         if child.children:
-            subcontent = get_markdown(child, indent=indent + indent_unit)
             if child_type == "numbered_list":
-                subcontent = subcontent[1:] # remove the one of the two "\n"
+                subcontent = get_markdown(
+                    child, indent=indent + indent_unit + " "*(int(math.log10(numlist_counter)) + 1))
+                subcontent = subcontent[1:]  # remove the one of the two "\n"
+            else:
+                subcontent = get_markdown(child, indent=indent + indent_unit)
             content += subcontent
 
     return content
