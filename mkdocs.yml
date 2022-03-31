@@ -13,7 +13,12 @@ theme:
     # - navigation.tabs
     # - navigation.tabs.sticky
 
-extra:
+extra_css:
+  - css/extra.css
+
+docs_dir: التوثيقات
+
+extra:  
   social:
     - icon: fontawesome/brands/twitter 
       link: https://twitter.com/squidfunk
@@ -23,13 +28,24 @@ extra:
       link: mailto:<email-address>
 
 markdown_extensions:
-  # - def_list
   - meta
+  - abbr
+  - admonition
+  - def_list
   - attr_list
   - md_in_html
+  - pymdownx.mark
+  - pymdownx.details
+  - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.betterem
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+     permalink: true
+
+plugins:
+  - tags:
+      tags_file: الأوسمة.md
