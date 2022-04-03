@@ -1,0 +1,23 @@
+:root {
+  --md-text-font-family: "Roboto"; 
+  --md-text-font-size: 21px;
+}
+
+body {
+  /* direction: rtl; */
+  font-size: 0.85rem;
+}
+
+p, a, li, button, span, .task-list-itemm .md-typeset {
+  font-size: 1rem !important;
+}
+
+.g {
+  display: flex;
+  /* gap: 12;
+  grid-template: 12px; */
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  gap: 12px;
+}

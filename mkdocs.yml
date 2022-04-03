@@ -1,0 +1,51 @@
+site_name: تَجميعةٌ
+theme:
+  name: material
+  language: ar
+  palette: 
+    scheme: default
+    primary: black
+    accent: grey
+  font:
+    text: Roboto
+  features:
+    - navigation.tracking
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+
+extra_css:
+  - css/تخصيصات.css
+
+docs_dir: التوثيقات
+
+extra:  
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mobadarah
+    # - icon: fontawesome/brands/twitter 
+    #   link: https://twitter.com/squidfunk
+    # - icon: fontawesome/solid/paper-plane
+    #   link: mailto:<email-address>
+
+markdown_extensions:
+  - meta
+  - abbr
+  - admonition
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.mark
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.betterem
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+     permalink: true
+
+plugins:
+  - tags:
+      tags_file: الأوسمة.md
