@@ -30,7 +30,7 @@ __ملاحظات:__
 <!---toc start-->
 
 * [تجميعات وقوائم رائعة](#تجميعات-وقوائم-رائعة)
-* [مشاريع مطلوب توجدها](#مشاريع-مطلوب-توجدها)
+* [أفكار لمشاريع](#أفكار-لمشاريع)
   * [مصيرات ومحررات المعادلات](#مصيرات-ومحررات-المعادلات)
   * [تعريب المطلحات العلمية](#تعريب-المطلحات-العلمية)
   * [الذكاء الإصطناعي في خدمة التعريب](#الذكاء-الإصطناعي-في-خدمة-التعريب)
@@ -60,6 +60,7 @@ __ملاحظات:__
   * [الشعر - انتاج شعر](#الشعر---انتاج-شعر)
   * [الشعر - التعرف على بحر البيت](#الشعر---التعرف-على-بحر-البيت)
 * [خطوط (منصدات الخط)](#خطوط-منصدات-الخط)
+    * [خطوط أحادية المسافة](#خطوط-أحادية-المسافة)
 * [الوصولية (A11y)](#الوصولية-a11y)
 * [تقنية - عام](#تقنية---عام)
 * [الرخصة](#الرخصة)
@@ -94,7 +95,7 @@ __ملاحظات:__
 
   <span dir=ltr>Arabic NLP tools List inventory QalsadiQalsadi Qalsadi: Arabic mophological analyzer Library for python. Buckwalter Arabic Morphological Analyzer (BAMA BAMA) Standard Arabic Morphological Analyzer (SAMA SAMA, version 3.0 of BAMA) ElixirFM ElixirFM : Functional Arabic Morphology Xerox Arabic Morphological Analysis and Generation (Deprecated) NMSU NMSU's Arabic Morphological Analyzer - MAGEAD: Morphological Analysis and Generation for Arabic and its Dialects ~~- Almorgeana : Arabic Lexeme-based Morphological Generation and Analysis is distributed as part of the MADA system.</span>
 
-# مشاريع مطلوب توجدها
+# أفكار لمشاريع
 
 مجموعة من المشاريع المطلوب تواجدها بدلا من العمل على مشاريع موجودة وإعادة اختراع العجلة، وإذا كنت تريد تنمية مهاراتك في مشاريع بسيطة والمشاريع المطلوبة تتطلب خبرة وجهدا، أو ليست في مجالك وأردت المساهمة، ساهم في تنمية المشاريع الموجودة بالفعل، ستجد الكثير قد مضى عليه فترة من الزمن، ويحتاج بعض التحديثات والتنمية.
 
@@ -126,15 +127,9 @@ __مقتراحات ورُؤى أخرى:__
 
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
 
-
-
-لكن الأمثلة السابقة ليست كما ينبغي
-
-إذ أن خط.س خدمة للحصول على صور تنزلها وتستخدمها وما نريده هو مكتبه للواجهات المختلفة تعرضه كنص وليس صورة كما في Katex
-
-ومكتبة arabic-mathjax هي إضافة لل mathjax وتكتب معادلاتك بالإنجليزية وهي تعرب أنواع محددة من الرموز والدوال
-
-ولا يوجد إلى الآن ما يلبي الرغبات وتراه مستخدما كمكتبة في تطبيقات عليها إقبال كما هو الحال في katex, mathjax والمحرر Mathquill... وإذا تواجدت مكتبة للبايثون، تصير المعادلة من صورتها المكودة فيما يشبه ال latex لصورة، يمكننا الانطلاق منها إلى استخدامها في نسخة معربة من ال Manim
+لكن الأمثلة السابقة ليست كما ينبغي إذ أن خط.س خدمة للحصول على صور تنزلها وتستخدمها وما نريده هو مكتبه للواجهات المختلفة تعرضه كنص وليس صورة كما في Katex.
+ومكتبة arabic-mathjax هي إضافة لل mathjax وتكتب معادلاتك بالإنجليزية وهي تعرب أنواع محددة من الرموز والدوال ولا يوجد إلى الآن ما يلبي الرغبات وتراه مستخدما كمكتبة في تطبيقات عليها إقبال كما هو الحال في katex, mathjax والمحرر Mathquill...
+وإذا تواجدت مكتبة للبايثون، تصير المعادلة من صورتها المكودة فيما يشبه ال latex لصورة، يمكننا الانطلاق منها إلى استخدامها في نسخة معربة من ال Manim
 
 ## تعريب المطلحات العلمية
 
@@ -192,12 +187,7 @@ __رؤيتي على المدى البعيد__
 
 وبسبب وجود محاولات لإنشاء لغة عربية قادرة على التحدي والظهور، فلا بد من توافر خط، منضد، للنص العربي ليكون أحادي المسافة وملائما للغة العربية والأكواد المكتوبة بها. يوجد محاولات جيدة مثل [خط كوكب](https://makkuk.com/kawkab-mono/)، لكن ليس كل الحروف إلزاما أن يكون تواجدها بنفس العرض، يمكنك الإطلاع على [هذه التويتة](https://twitter.com/KhaledGhetas/status/1416918281169121282) لخالد حسني...
 
-اللغة الإنجليزية لها كثير من اللغات أحادية المسافة المناسبة لكل الأذواق 
-
-__الخيارات المتوفرة حاليا:__
-
-- [خط كوكب](https://makkuk.com/kawkab-mono/)
-- [خط أسس](https://community.alusus.org/t/kht-erby-jdyd-thabt-alerd-mwnw/23)
+اللغة الإنجليزية لها كثير من اللغات أحادية المسافة المناسبة لكل الأذواق، لكن العربية لا يتوفر لها سوى القليل، [انظر الخطوط أحادية المسافة](https://github.com/mobadarah/tajmeeaton#خطوط-أحادية-المسافة)
 
 # في خدمة الإسلام
 
@@ -658,6 +648,16 @@ __الخيارات المتوفرة حاليا:__
 - https://github.com/Gue3bara/Cairo
 
   <span dir=ltr>Cairo is a contemporary Arabic and Latin typeface family. Mohamed Gaber extended the famous Latin typeface family Titillum Web to support the Arabic script, with a design that is based on the Kufi calligraphic style. Cairo balances classic and contemporary tastes with wide open counters and short ascenders and descenders that minimize length while maintaining easy readability.</span>
+
+### خطوط أحادية المسافة
+
+- https://community.alusus.org/t/kht-erby-jdyd-thabt-alerd-mwnw/23
+
+  <span dir=rtl>خط أسس أحادي المسافة، صمم بشكل رئيسي لمحررات أكواد لغة الأسس وهو متاح الآن لستخدمه كيفما تشاء ومع أي لغة أحببت.</span>
+
+- https://makkuk.com/kawkab-mono/
+
+  <span dir=rtl>تنزيل كوكب مونو 0.500 Download Kawkab Mono خط كوكب مونو ليس ثمة فلسفة لكن مجرد معايير وضوابط. أكثر الرسومات الأولية كانت من خط يدي ثم عدلتها بواسطة برنامج Glyphs حتى تناسب الأهداف التصميمية، أسرد بعضها هنا: نظراً لكون الخط ثابت عرض المحارف وجدت معاناة مع الأحرف التي تتطلب مساحة أفقية ضعف الأحرف العادية، كالسين والشين النهائيتين وحرفي الصاد والضاد.</span>
 
 # الوصولية (A11y)
 
