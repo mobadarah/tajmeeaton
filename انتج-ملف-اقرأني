@@ -49,10 +49,17 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
 
     def consume_child():
         nonlocal current_child_index, current_child, next_child, prev_child
+
         if current_child_index > 0:
             prev_child = block.children[current_child_index - 1]
+        else:
+            prev_child = None
+
         if current_child_index < len(block.children) - 1:
             next_child = block.children[current_child_index + 1]
+        else:
+            next_child = None
+
         current_child = block.children[current_child_index]
         current_child_index += 1
         if progress:
@@ -83,7 +90,10 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
         elif child_type == "quote":
             content += block_prefix + "> " + child.title
         elif child_type == "bulleted_list":
-            content += block_prefix + "- " + child.title
+            item_prefix = block_prefix
+            if prev_child and prev_child.type == "bulleted_list":
+                item_prefix = f"\n{indent}"
+            content += f"{item_prefix}- " + child.title
         elif child_type == "numbered_list":
             numlist_counter += 1
             item_prefix = block_prefix
@@ -116,7 +126,7 @@ def get_markdown(block, indent="", indent_unit="  ", root=False):
                 consume_child()
 
         if child.children:
-            if child_type == "numbered_list":
+            if child_type == "numbered_list" or child_type == "bulleted_list":
                 subcontent = get_markdown(
                     child, indent=indent + indent_unit + " "*(int(math.log10(numlist_counter)) + 1))
                 subcontent = subcontent[1:]  # remove the one of the two "\n"
