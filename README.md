@@ -115,9 +115,17 @@ __مقتراحات ورُؤى أخرى:__
 
 ## مصيرات ومحررات المعادلات
 
-محررات ومصيرات معادلات الرياضيات مثل [Katex](https://github.com/KaTeX/KaTeX)، [Mathquill](https://github.com/mathquill/mathquill)، و[Manim](https://github.com/3b1b/manim). ونريد أن تُنشأ مكونات للواجهة للمواقع وتطبيقات الأندرويد والآيفون وأطر العمل .المختلفة
+محررات ومصيرات معادلات الرياضيات. ونريد أن تُنشأ مكونات للواجهة للمواقع وتطبيقات الأندرويد والآيفون وأطر العمل .المختلفة
 
-ومثال على هذا 
+__ما نريد أن ننشيء مثله:__
+
+- [Katex](https://github.com/KaTeX/KaTeX), [Mathjax](https://www.mathjax.org/)
+- [Mathquill](https://github.com/mathquill/mathquill)
+- [Manim](https://github.com/3b1b/manim)
+- [Mathpix](https://mathpix.com/)
+- [Graspable Math](https://activities.graspablemath.com/)
+
+__ومثال على هذا:__
 
 - https://khatt.org/
 
@@ -128,8 +136,8 @@ __مقتراحات ورُؤى أخرى:__
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
 
 لكن الأمثلة السابقة ليست كما ينبغي إذ أن خط.س خدمة للحصول على صور تنزلها وتستخدمها وما نريده هو مكتبه للواجهات المختلفة تعرضه كنص وليس صورة كما في Katex.
+
 ومكتبة arabic-mathjax هي إضافة لل mathjax وتكتب معادلاتك بالإنجليزية وهي تعرب أنواع محددة من الرموز والدوال ولا يوجد إلى الآن ما يلبي الرغبات وتراه مستخدما كمكتبة في تطبيقات عليها إقبال كما هو الحال في katex, mathjax والمحرر Mathquill...
-وإذا تواجدت مكتبة للبايثون، تصير المعادلة من صورتها المكودة فيما يشبه ال latex لصورة، يمكننا الانطلاق منها إلى استخدامها في نسخة معربة من ال Manim
 
 ## تعريب المطلحات العلمية
 
