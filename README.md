@@ -136,7 +136,10 @@ __ومثال على هذا:__
 - https://github.com/OmarIthawi/arabic-mathjax
 
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
-
+  
+- https://play.google.com/store/apps/details?id=com.kahraba4u.jabr
+   <span dir=rtl>جبر: أول برنامج أندرويد يمكنه حل مسائل رياضيات وعرضها بالصيغ والأرقام العربية لكن للأسف ليس مفتوح المصدر.</span>
+   
 لكن الأمثلة السابقة ليست كما ينبغي إذ أن خط.س خدمة للحصول على صور تنزلها وتستخدمها وما نريده هو مكتبه للواجهات المختلفة تعرضه كنص وليس صورة كما في Katex.
 
 ومكتبة arabic-mathjax هي إضافة لل mathjax وتكتب معادلاتك بالإنجليزية وهي تعرب أنواع محددة من الرموز والدوال ولا يوجد إلى الآن ما يلبي الرغبات وتراه مستخدما كمكتبة في تطبيقات عليها إقبال كما هو الحال في katex, mathjax والمحرر Mathquill...
