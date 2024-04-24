@@ -138,7 +138,7 @@ __ومثال على هذا:__
   <span dir=ltr>This is an extension to MathJax (v2.5+), that provides basic Arabic support to MathJax. The extension so far only supports TeX input with HTML-CSS output. However, support to other input and output jaxes is possible. It provides the following: Flip the Equation and render it the Right-to-left (RTL) way!</span>
   
 - https://play.google.com/store/apps/details?id=com.kahraba4u.jabr
-   <span dir=rtl>جبرأول برنامج أندرويد يمكنه حل مسائل رياضيات وعرضها بالصيغ والأرقام العربية.</span>
+   <span dir=rtl>جبر: أول برنامج أندرويد يمكنه حل مسائل رياضيات وعرضها بالصيغ والأرقام العربية لكن للأسف ليس مفتوح المصدر.</span>
    
 لكن الأمثلة السابقة ليست كما ينبغي إذ أن خط.س خدمة للحصول على صور تنزلها وتستخدمها وما نريده هو مكتبه للواجهات المختلفة تعرضه كنص وليس صورة كما في Katex.
 
